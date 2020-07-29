@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - PP",
+            "request": "launch",
+            "mainClass": "prime_partition.PP",
+            "projectName": "DynamicProgramming_516c5416"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - MCM",
             "request": "launch",
             "mainClass": "matrixchain.MCM",

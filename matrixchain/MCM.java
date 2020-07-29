@@ -9,6 +9,7 @@ public class MCM{
     }
 
     public static int solve(int i,int j){
+        System.out.println(i+":"+j);
         if(i>=j)
             return 0;
         int ans=Integer.MAX_VALUE;
