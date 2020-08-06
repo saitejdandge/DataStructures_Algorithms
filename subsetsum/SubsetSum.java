@@ -7,7 +7,6 @@ public class SubsetSum {
 
     public static void main(String[] args) {
         System.out.println(solve(data.length, 6));
-
         int[][] t = new int[data.length + 1][6 + 1];
         Arrays.stream(t).forEach(a -> Arrays.fill(a, -1));
         System.out.println("Top Down" + topDown(data.length, 6, t));
@@ -48,16 +47,12 @@ public class SubsetSum {
     }
 
     public static void printElements(int n, int sum, int[][] t) {
-
-        //
-        // System.out.println("n:" + n + "sum:" + sum);
         int res = t[n][sum];
         for (int i = n; i > 0 && sum > 0; i--) {
             if (t[i - 1][sum] != res) {
                 System.out.print(data[i - 1] + "@Element");
                 sum -= data[i - 1];
                 res--;
-                // System.out.println("Sum " + sum);
             }
         }
 

@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Equation",
+            "request": "launch",
+            "mainClass": "equation.Equation",
+            "projectName": "DynamicProgramming_516c5416"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - SubsetSum",
             "request": "launch",
             "mainClass": "subsetsum.SubsetSum",
