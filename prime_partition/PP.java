@@ -21,7 +21,7 @@ public class PP {
     }
 
     static int solve(int i, int j) {
-
+        
         if (i >= j) {
             return 0;
         }
