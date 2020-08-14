@@ -10,6 +10,7 @@ public class LCS {
         System.out.println(solveBottomUp(a, b));
 
     }
+
     static int solve(String a, String b, int m, int n) {
 
         if (m == 0 || n == 0)
@@ -21,7 +22,7 @@ public class LCS {
             return Math.max(solve(a, b, m, n - 1), solve(a, b, m - 1, n));
     }
 
-    static int solveTopDown(String a, String b) {
+    public static int solveTopDown(String a, String b) {
         if (a == null || b == null)
             return 0;
 
@@ -51,7 +52,7 @@ public class LCS {
 
     }
 
-    static int solveBottomUp(String a, String b) {
+    public static int solveBottomUp(String a, String b) {
         if (a == null || b == null)
             return 0;
 
@@ -61,10 +62,6 @@ public class LCS {
             t[i][0] = 0;
         for (int j = 0; j <= b.length(); j++)
             t[0][j] = 0;
-
-        for (int i = 1; i <= a.length(); i++)
-            for (int j = 1; j <= b.length(); j++)
-                t[i][j] = -1;
 
         for (int i = 1; i <= a.length(); i++) {
             for (int j = 1; j <= b.length(); j++) {

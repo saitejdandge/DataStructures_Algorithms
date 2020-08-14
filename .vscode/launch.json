@@ -6,6 +6,41 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - PatternMatching",
+            "request": "launch",
+            "mainClass": "LCS.PatternMatching",
+            "projectName": "DynamicProgramming_516c5416"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - LongestRepeatingSubSeq",
+            "request": "launch",
+            "mainClass": "LCS.LongestRepeatingSubSeq",
+            "projectName": "DynamicProgramming_516c5416"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - LongestPalindromeSubSeq",
+            "request": "launch",
+            "mainClass": "LCS.LongestPalindromeSubSeq",
+            "projectName": "DynamicProgramming_516c5416"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - ConvertAToB",
+            "request": "launch",
+            "mainClass": "LCS.ConvertAToB",
+            "projectName": "DynamicProgramming_516c5416"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - ShortestCommonSuperSeq",
+            "request": "launch",
+            "mainClass": "LCS.ShortestCommonSuperSeq",
+            "projectName": "DynamicProgramming_516c5416"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - LCS",
             "request": "launch",
             "mainClass": "LCS.LCS",
