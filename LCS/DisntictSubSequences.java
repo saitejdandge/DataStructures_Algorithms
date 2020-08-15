@@ -22,6 +22,7 @@ public class DisntictSubSequences {
     }
 
     public static int bottomUp() {
+        String x;
         int[][] t = new int[a.length() + 1][b.length() + 1];
         // init the matrix
         for (int i = 0; i <= a.length(); i++)
