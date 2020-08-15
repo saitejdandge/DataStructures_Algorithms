@@ -4,10 +4,12 @@ import java.util.HashMap;
 
 public class IsInterLeaving {
 
-    public static HashMap<String,Boolean>map=new HashMap<>();
+    public static HashMap<String, Boolean> map = new HashMap<>();
+
     public static void main(String[] args) {
-        System.out.println(solve("ab","xd","axbd"));
+        System.out.println(solve("ab", "xd", "axbd"));
     }
+
     public static boolean solve(String a, String b, String c) {
         if (a.isEmpty() && b.isEmpty() && c.isEmpty())
             return true;

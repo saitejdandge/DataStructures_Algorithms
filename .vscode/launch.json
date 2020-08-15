@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - WaysToDecode",
+            "request": "launch",
+            "mainClass": "general.WaysToDecode",
+            "projectName": "DynamicProgramming_516c5416"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - IsInterLeaving",
             "request": "launch",
             "mainClass": "LCS.IsInterLeaving",
