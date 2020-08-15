@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - DisntictSubSequences",
+            "request": "launch",
+            "mainClass": "LCS.DisntictSubSequences",
+            "projectName": "DynamicProgramming_516c5416"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - PatternMatching",
             "request": "launch",
             "mainClass": "LCS.PatternMatching",
