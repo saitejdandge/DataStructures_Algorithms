@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Solution",
+            "request": "launch",
+            "mainClass": "edit_distance.Solution",
+            "projectName": "DynamicProgramming_516c5416"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - MaxSubArray2D",
             "request": "launch",
             "mainClass": "kadane.MaxSubArray2D",

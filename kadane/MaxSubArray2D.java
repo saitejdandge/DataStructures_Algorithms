@@ -18,19 +18,19 @@ public class MaxSubArray2D {
 
         int sum = 0;
 
-        int[] rowCount = new int[row];
+        int[] rowSum = new int[row];
 
         for (int l = 0; l < col; l++) {
             // flashing the running row sum
-            for (int i = 0; i < rowCount.length; i++)
-                rowCount[i] = 0;
+            for (int i = 0; i < rowSum.length; i++)
+                rowSum[i] = 0;
             
             for (int r = l; r < col; r++) {
                 // updating running row sum
-                for (int i = 0; i < rowCount.length; i++)
-                    rowCount[i] += a[i][r];
+                for (int i = 0; i < rowSum.length; i++)
+                    rowSum[i] += a[i][r];
                 // kadane of running row sum
-                sum = Math.max(sum, MaxSubArray.solve(rowCount));
+                sum = Math.max(sum, MaxSubArray.solve(rowSum));
             }
 
         }
