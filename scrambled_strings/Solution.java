@@ -7,7 +7,7 @@ public class Solution {
     }
 
     public static boolean solve(String a, String b, int m, int n) {
-
+        return false;
     }
 
 }
