@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - MaxSubArray",
+            "request": "launch",
+            "mainClass": "kadane.MaxSubArray",
+            "projectName": "DynamicProgramming_516c5416"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - WaysToDecode",
             "request": "launch",
             "mainClass": "general.WaysToDecode",

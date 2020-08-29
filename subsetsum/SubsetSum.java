@@ -26,6 +26,12 @@ public class SubsetSum {
             return solve(n - 1, sum);
     }
 
+    
+    /*
+    isSubsetSum(set, n, sum) = false, if sum > 0 and n == 0
+    isSubsetSum(set, n, sum) = true, if sum == 0 
+    */
+
     public static int topDown(int n, int sum, int[][] t) {
         if (n == 0 && sum == 0)
             return 1;
