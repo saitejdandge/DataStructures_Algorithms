@@ -3,8 +3,7 @@ package edit_distance;
 public class Solution {
 
     public static void main(String[] args) {
-        System.out.println(minDistance("saitej", "a"));
-
+        System.out.println(minDistance("saitej", "tej"));
     }
 
     public static int minDistance(String A, String B) {
