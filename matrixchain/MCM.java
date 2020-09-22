@@ -2,7 +2,7 @@ package matrixchain;
 
 public class MCM {
 
-    static int a[] = { 3,2,4,1};
+    static int a[] = { 1, 2, 3,4};
 
     public static void main(String[] args) {
         System.out.println(solve(1, a.length - 1));
@@ -12,10 +12,12 @@ public class MCM {
 
         if (i >= j)
             return 0;
-        int ans = Integer.MAX_VALUE;
+        int ans = 0;
         for (int k = i; k <= j - 1; k++) {
-            int temp = solve(i, k) + solve(k + 1, j) + a[i - 1] *a[k] * a[j];
-            ans = Math.min(ans, temp);
+            int temp = solve(i, k) + solve(k + 1, j) + 1;
+            if (i == 1 && j == a.length - 1)
+                System.out.println(temp + "");
+            ans += temp;
         }
         return ans;
     }

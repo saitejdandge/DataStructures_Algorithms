@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Puzzle",
+            "request": "launch",
+            "mainClass": "Puzzle",
+            "projectName": "DynamicProgramming_516c5416"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - MinCoins",
+            "request": "launch",
+            "mainClass": "unbounded_ks.MinCoins",
+            "projectName": "DynamicProgramming_516c5416"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Dishes",
             "request": "launch",
             "mainClass": "tusharbday.Dishes",
