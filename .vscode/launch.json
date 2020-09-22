@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - BNS1",
+            "request": "launch",
+            "mainClass": "stocks.BNS1",
+            "projectName": "DynamicProgramming_516c5416"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Puzzle",
             "request": "launch",
             "mainClass": "Puzzle",

@@ -3,7 +3,7 @@ package paranthesization;
 public class Paran {
     public static void main(String[] args) {
 
-        System.out.println(solve("F|T|T"));
+        System.out.println("Ans"+solve("F|T^T&F"));
     }
 
     public static int solve(String a) {
@@ -28,22 +28,19 @@ public class Paran {
             }
         }
         int temp = 0;
-        int global = Integer.MAX_VALUE;
         for (int k = i + 1; k <= j - 1; k += 2) {
+        
             int lf = solve(a, i, k - 1, false);
             int lt = solve(a, i, k - 1, true);
             int rt = solve(a, k + 1, j, true);
             int rf = solve(a, k + 1, j, false);
-
-            String s;
-            
 
             switch (a.charAt(k)) {
                 case '&':
                     if (expected)
                         temp += (lt * rt);
                     else
-                        temp += (lf * rf) + (lf * rt) + (rf * lf);
+                        temp += (lf * rf) + (lf * rt) + (rf * lt);
                     break;
 
                 case '|':
@@ -54,7 +51,7 @@ public class Paran {
                         temp += (lf * rf);
                     break;
                 case '^':
-                    if (expected)
+                    if (!expected)
                         temp += (lt * rt) + (lf * rf);
                     else
                         temp += (lf * rt) + (lt * rf);
@@ -66,11 +63,11 @@ public class Paran {
                 System.out.println("temp " + temp + " " + a.charAt(k));
                 System.out.println(lf + "_" + lt + "_" + rf + "_" + rt);
             }
-            global = Math.min(temp, global);
+            // global = Math.min(temp, global);
 
         }
 
-        return global;
+        return temp;
     }
 
 }
