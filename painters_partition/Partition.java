@@ -16,7 +16,7 @@ public class Partition {
         if (p == 0) {
             int s = 0;
             for (int k = i; k <= j; k++)
-                s += a[i];
+                s += a[k];
             return s;
         }
         int ans = Integer.MAX_VALUE;
