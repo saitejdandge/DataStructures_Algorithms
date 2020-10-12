@@ -5,9 +5,9 @@ public class LCS {
     public static void main(String[] args) {
         String a = "AGGTAB";
         String b = "GXTXAYB";
-        System.out.println(solve(a, b, a.length(), b.length()));
+        // System.out.println(solve(a, b, a.length(), b.length()));
         System.out.println(solveTopDown(a, b));
-        System.out.println(solveBottomUp(a, b));
+        // System.out.println(solveBottomUp(a, b));
 
     }
 
@@ -43,6 +43,7 @@ public class LCS {
             return t[m][n];
 
         if (a.charAt(m - 1) == b.charAt(n - 1)) {
+            System.out.print(a.charAt(m - 1)+" ");
             t[m][n] = 1 + solveTopDown(a, b, m - 1, n - 1, t);
         } else {
             t[m][n] = Math.max(solveTopDown(a, b, m - 1, n, t), solveTopDown(a, b, m, n - 1, t));

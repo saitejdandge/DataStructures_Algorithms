@@ -1,10 +1,10 @@
 package painters_partition;
 
 public class Partition {
-    static int a[] = { 10, 30, 60, 10, 40 };
+    static int a[] = { 10, 89, 400, 30 };
 
     public static void main(String[] args) {
-        System.out.println(solve(0, a.length - 1, 4));
+        System.out.println(solve(0, a.length - 1, 2));
     }
 
     public static int solve(int i, int j, int p) {
@@ -23,6 +23,8 @@ public class Partition {
         for (int k = i; k <= j - 1; k++) {
             int left = solve(i, k, p - 1);
             int right = solve(k + 1, j, p - 1);
+            if (i == 0 && j == a.length - 1)
+                System.out.println(left + "|" + right);
             int temp = Math.max(left, right);
             ans = Math.min(ans, temp);
         }
