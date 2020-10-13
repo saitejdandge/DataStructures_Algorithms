@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Solution_ArrayList",
+            "request": "launch",
+            "mainClass": "recursion.sort_array_stack.Solution_ArrayList",
+            "projectName": "DynamicProgramming_516c5416"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Solution",
             "request": "launch",
             "mainClass": "recursion.sort_array_stack.Solution",
