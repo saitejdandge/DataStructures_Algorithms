@@ -1,4 +1,4 @@
-package painters_partition;
+package dynamic_programming.painters_partition;
 
 public class Partition {
     static int a[] = { 10, 89, 400, 30 };

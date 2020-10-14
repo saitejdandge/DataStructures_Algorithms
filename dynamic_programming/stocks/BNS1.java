@@ -1,4 +1,4 @@
-package stocks;
+package dynamic_programming.stocks;
 
 // buy and sell the stock II
 public class BNS1 {

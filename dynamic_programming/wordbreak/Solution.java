@@ -1,4 +1,4 @@
-package wordbreak;
+package dynamic_programming.wordbreak;
 
 import java.util.ArrayList;
 import java.util.HashMap;

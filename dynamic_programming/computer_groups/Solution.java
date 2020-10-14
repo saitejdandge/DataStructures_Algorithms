@@ -1,4 +1,4 @@
-package computer_groups;
+package dynamic_programming.computer_groups;
 
 /*
 Given set of computers, 

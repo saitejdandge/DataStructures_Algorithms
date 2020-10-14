@@ -1,4 +1,4 @@
-package baloonbursting;
+package dynamic_programming.baloonbursting;
 
 import java.util.HashMap;
 

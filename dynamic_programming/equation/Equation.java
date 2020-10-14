@@ -1,4 +1,4 @@
-package equation;
+package dynamic_programming.equation;
 
 public class Equation {
 

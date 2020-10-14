@@ -1,4 +1,4 @@
-package kadane;
+package dynamic_programming.kadane;
 
 public class MaxSubArray {
     public static void main(String[] args) {

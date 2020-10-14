@@ -1,4 +1,4 @@
-package scrambled_strings;
+package dynamic_programming.scrambled_strings;
 
 public class Solution {
 

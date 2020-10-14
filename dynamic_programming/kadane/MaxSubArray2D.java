@@ -1,4 +1,4 @@
-package kadane;
+package dynamic_programming. kadane;
 
 public class MaxSubArray2D {
 

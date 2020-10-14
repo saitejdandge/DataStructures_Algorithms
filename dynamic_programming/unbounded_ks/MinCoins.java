@@ -1,4 +1,4 @@
-package unbounded_ks;
+package dynamic_programming. unbounded_ks;
 
 public class MinCoins {
     static int data[];

@@ -1,4 +1,4 @@
-package matrixchain;
+package dynamic_programming. matrixchain;
 
 public class MCM {
 

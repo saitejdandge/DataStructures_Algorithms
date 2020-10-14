@@ -1,4 +1,4 @@
-package dungeon;
+package dynamic_programming.dungeon;
 
 class Solution {
     public int calculateMinimumHP(int[][] a) {

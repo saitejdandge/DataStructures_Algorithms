@@ -1,3 +1,4 @@
+package other;
 public class SubArrays {
 
     static int a[] = { 4, 8, 5, 2, 4 };

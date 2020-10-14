@@ -1,4 +1,4 @@
-package LCS;
+package dynamic_programming. LCS;
 
 public class PatternMatching {
 

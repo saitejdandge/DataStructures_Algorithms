@@ -1,4 +1,4 @@
-package edit_distance;
+package dynamic_programming.edit_distance;
 
 public class Solution {
 

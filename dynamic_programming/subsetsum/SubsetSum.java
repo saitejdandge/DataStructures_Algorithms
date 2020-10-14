@@ -1,4 +1,4 @@
-package subsetsum;
+package dynamic_programming. subsetsum;
 
 import java.util.ArrayList;
 import java.util.Arrays;

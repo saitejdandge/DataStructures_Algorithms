@@ -1,4 +1,4 @@
-package general;
+package dynamic_programming.general;
 
 public class WaysToDecode {
     int []map;

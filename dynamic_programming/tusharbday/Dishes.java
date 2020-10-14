@@ -1,4 +1,4 @@
-package tusharbday;
+package dynamic_programming. tusharbday;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package prime_partition;
+package dynamic_programming.prime_partition;
 
 public class PP {
     static String str = "banana";

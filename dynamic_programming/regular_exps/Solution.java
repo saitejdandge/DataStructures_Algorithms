@@ -1,4 +1,4 @@
-package regular_exps;
+package dynamic_programming.regular_exps;
 
 public class Solution {
     public static void main(String[] args) {

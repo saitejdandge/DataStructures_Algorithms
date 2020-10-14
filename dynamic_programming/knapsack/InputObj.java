@@ -1,4 +1,4 @@
-package knapsack;
+package dynamic_programming.knapsack;
 public class InputObj {
     int weight;
     int value;

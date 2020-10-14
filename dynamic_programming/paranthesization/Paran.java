@@ -1,9 +1,9 @@
-package paranthesization;
+package dynamic_programming.paranthesization;
 
 public class Paran {
     public static void main(String[] args) {
 
-        System.out.println("Ans"+solve("F|T^T&F"));
+        System.out.println("Ans" + solve("F|T^T&F"));
     }
 
     public static int solve(String a) {
@@ -11,7 +11,6 @@ public class Paran {
     }
 
     public static int solve(String a, int i, int j, boolean expected) {
-       
 
         if (i > j)
             return 0;
@@ -30,7 +29,7 @@ public class Paran {
         }
         int temp = 0;
         for (int k = i + 1; k <= j - 1; k += 2) {
-        
+
             int lf = solve(a, i, k - 1, false);
             int lt = solve(a, i, k - 1, true);
             int rt = solve(a, k + 1, j, true);
