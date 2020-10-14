@@ -1,4 +1,4 @@
-# DynamicProgramming
+# Data structures and Algorithms
 Practise Repo
 
 TODO
