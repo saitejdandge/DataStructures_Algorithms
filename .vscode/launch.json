@@ -8,6 +8,13 @@
             "type": "java",
             "name": "CodeLens (Launch) - Solution",
             "request": "launch",
+            "mainClass": "backtracking.permutate_strings_ibh.Solution",
+            "projectName": "DynamicProgramming_516c5416"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Solution",
+            "request": "launch",
             "mainClass": "backtracking.permutate_strings.Solution",
             "projectName": "DynamicProgramming_516c5416"
         },
