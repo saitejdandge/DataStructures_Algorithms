@@ -8,6 +8,13 @@
             "type": "java",
             "name": "CodeLens (Launch) - Solution",
             "request": "launch",
+            "mainClass": "backtracking.sudoko_solver.Solution",
+            "projectName": "DynamicProgramming_516c5416"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Solution",
+            "request": "launch",
             "mainClass": "backtracking.rat_in_a_maze.Solution",
             "projectName": "DynamicProgramming_516c5416"
         },

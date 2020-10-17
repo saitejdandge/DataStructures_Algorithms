@@ -1,4 +1,4 @@
-package backtracking.permutate_strings_ibh;
+package recursion.permutate_strings_ibh;
 
 import java.util.ArrayList;
 import java.util.List;
