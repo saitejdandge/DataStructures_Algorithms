@@ -4,7 +4,7 @@ public class Solution {
 
     public static void main(String[] args) {
 
-        int a[] = { 4, 3, 2, 3, 5, 1 };
+        int a[] = { 4, 3, 2, 3, 5, 1,1000 };
         System.out.println(driver(a, 5));
 
     }
