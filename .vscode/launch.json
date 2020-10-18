@@ -8,6 +8,20 @@
             "type": "java",
             "name": "CodeLens (Launch) - Solution",
             "request": "launch",
+            "mainClass": "backtracking.sub_set_sum.Solution",
+            "projectName": "DynamicProgramming_516c5416"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Solution",
+            "request": "launch",
+            "mainClass": "backtracking.k_buckets_equal_sum.Solution",
+            "projectName": "DynamicProgramming_516c5416"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Solution",
+            "request": "launch",
             "mainClass": "backtracking.sudoko_solver.Solution",
             "projectName": "DynamicProgramming_516c5416"
         },
