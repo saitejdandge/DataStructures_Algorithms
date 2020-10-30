@@ -9,9 +9,7 @@ public class Solution {
 
     public static void solve(int open, int close, String output) {
         if (open == 0 && close == 0) {
-            Styles.solv
-            e(output, "");
-            // System.out.println(output);
+            Styles.solve(output, "");
             return;
         }
         if (open == 0) {
