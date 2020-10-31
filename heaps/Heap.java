@@ -77,8 +77,6 @@ public class Heap<E> {
 
     private void trickleUp(int position) {
 
-        if (lastPosition < 0)
-            return;
 
         int parent = (int) Math.floor(position - 1.0 / 2);
 

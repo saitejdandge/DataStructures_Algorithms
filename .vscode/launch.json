@@ -6,6 +6,55 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - connect_ropes_min_cost",
+            "request": "launch",
+            "mainClass": "heaps.connect_ropes_min_cost",
+            "projectName": "DynamicProgramming_516c5416"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - frequency_sort",
+            "request": "launch",
+            "mainClass": "heaps.frequency_sort",
+            "projectName": "DynamicProgramming_516c5416"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - k_freq_numbers",
+            "request": "launch",
+            "mainClass": "heaps.k_freq_numbers",
+            "projectName": "DynamicProgramming_516c5416"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - k_closest_numbers",
+            "request": "launch",
+            "mainClass": "heaps.k_closest_numbers",
+            "projectName": "DynamicProgramming_516c5416"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - k_sorted_array",
+            "request": "launch",
+            "mainClass": "heaps.k_sorted_array",
+            "projectName": "DynamicProgramming_516c5416"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - k_smallest",
+            "request": "launch",
+            "mainClass": "heaps.k_smallest",
+            "projectName": "DynamicProgramming_516c5416"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Solution",
+            "request": "launch",
+            "mainClass": "bst.Solution",
+            "projectName": "DynamicProgramming_516c5416"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Solution",
             "request": "launch",
             "mainClass": "heaps.Solution",
