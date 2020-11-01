@@ -4,13 +4,14 @@ public class Solution {
     public static void main(String[] args) {
 
         LinkedList<Integer> list = new LinkedList<>();
-        list.removeLast();
-        list.addFirst(2);
-        list.addLast(4);
-        list.addFirst(3);
-        list.remove(3);
-        for (int i : list)
+        for (int i = 0; i < 10; i++)
+            if (i % 2 == 0)
+                list.addFirst(i);
+            else
+                list.addLast(i);
+
+        for(int i:list)
             System.out.println(i);
-        System.out.print(list.size());
+
     }
 }
