@@ -9,7 +9,7 @@ public class LinkedList<E> implements ListI<E> {
     private Node<E> tail;
     private int currentSize;
 
-   public LinkedList() {
+    public LinkedList() {
         this.currentSize = 0;
     }
 
@@ -26,12 +26,12 @@ public class LinkedList<E> implements ListI<E> {
     public void addLast(E obj) {
 
         Node<E> node = new Node<>(obj);
-        currentSize++;
+
         if (head == null) {
-            // tail is also null
-            head = tail = node;
+            addFirst(obj);
             return;
         }
+        currentSize++;
         tail.next = node;
         tail = node;
     }
@@ -39,12 +39,14 @@ public class LinkedList<E> implements ListI<E> {
     @Override
     public void addFirst(E obj) {
 
-        currentSize++;
         Node<E> node = new Node<>(obj);
         if (head == null) {
             head = tail = node;
+            currentSize++;
             return;
         }
+
+        currentSize++;
         node.next = head;
         head = node;
     }
@@ -54,7 +56,11 @@ public class LinkedList<E> implements ListI<E> {
         if (head == null)
             return null;
         E tmp = head.data;
-        head = head.next;
+        // one element
+        if (head == tail)
+            head = tail = null;
+        else
+            head = head.next;
         currentSize--;
         return tmp;
 
@@ -94,6 +100,7 @@ public class LinkedList<E> implements ListI<E> {
                 if (current == tail)
                     return removeLast();
                 prev.next = current.next;
+                currentSize--;
                 return current.data;
             }
             prev = current;
@@ -104,8 +111,6 @@ public class LinkedList<E> implements ListI<E> {
 
     @Override
     public boolean contains(E obj) {
-        if (head == null)
-            return false;
         Node<E> current = head;
 
         while (current != null) {
