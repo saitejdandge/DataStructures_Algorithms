@@ -6,6 +6,69 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - EvaluatingExpression",
+            "request": "launch",
+            "mainClass": "stack.EvaluatingExpression",
+            "projectName": "DynamicProgramming_516c5416"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - RainWaterTapping",
+            "request": "launch",
+            "mainClass": "stack.RainWaterTapping",
+            "projectName": "DynamicProgramming_516c5416"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - MaxAreaBinaryMatrix",
+            "request": "launch",
+            "mainClass": "stack.MaxAreaBinaryMatrix",
+            "projectName": "DynamicProgramming_516c5416"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - MaxAreaHistorgram",
+            "request": "launch",
+            "mainClass": "stack.MaxAreaHistorgram",
+            "projectName": "DynamicProgramming_516c5416"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - SmallerToRight",
+            "request": "launch",
+            "mainClass": "stack.SmallerToRight",
+            "projectName": "DynamicProgramming_516c5416"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - SmallerToLeft",
+            "request": "launch",
+            "mainClass": "stack.SmallerToLeft",
+            "projectName": "DynamicProgramming_516c5416"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - StockSpanProblem",
+            "request": "launch",
+            "mainClass": "stack.StockSpanProblem",
+            "projectName": "DynamicProgramming_516c5416"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - GreaterToLeft",
+            "request": "launch",
+            "mainClass": "stack.GreaterToLeft",
+            "projectName": "DynamicProgramming_516c5416"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - GreaterToRight",
+            "request": "launch",
+            "mainClass": "stack.GreaterToRight",
+            "projectName": "DynamicProgramming_516c5416"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Solution",
             "request": "launch",
             "mainClass": "linked_list.Solution",
