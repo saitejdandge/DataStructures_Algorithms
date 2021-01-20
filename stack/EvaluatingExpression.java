@@ -18,7 +18,6 @@ public class EvaluatingExpression {
                 int c1 = stack.pop();
                 int c2 = stack.pop();
                 int result = 0;
-                // System.out.println(c1+" "+c+ " "+c2);
                 switch (c) {
 
                     case "+":
@@ -34,6 +33,8 @@ public class EvaluatingExpression {
                         if (c1 == 0)
                             return -1;
                         result = c2 / c1;
+                        break;
+                    default:
                         break;
                 }
                 stack.push(result);

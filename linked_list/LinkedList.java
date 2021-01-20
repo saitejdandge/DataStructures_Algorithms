@@ -5,15 +5,24 @@ import java.util.NoSuchElementException;
 
 public class LinkedList<E> implements ListI<E> {
 
-    private Node<E> head;
-    private Node<E> tail;
+    public Node<E> head;
+    public Node<E> tail;
+
+    public Node<E> getTail() {
+        return tail;
+    }
+
+    public Node<E> getHead() {
+        return head;
+    }
+
     private int currentSize;
 
     public LinkedList() {
         this.currentSize = 0;
     }
 
-    private class Node<E> {
+    public class Node<E> {
         Node<E> next;
         E data;
 
@@ -128,6 +137,27 @@ public class LinkedList<E> implements ListI<E> {
 
     private int compare(E obj, Node<E> node) {
         return ((Comparable<E>) obj).compareTo(node.data);
+    }
+
+    public boolean detectCycle() {
+        if (head == null)
+            return false;
+
+        Node<E> node = head;
+        while (node != null) {
+
+            Node<E> node2 = head;
+            while (node2 != node) {
+                if (node.next == node2
+                )
+                    return true;
+                node2 = node2.next;
+            }
+
+            node = node.next;
+        }
+        return false;
+
     }
 
     @Override
