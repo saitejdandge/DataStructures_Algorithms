@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Solution",
+            "request": "launch",
+            "mainClass": "squadstack.Solution",
+            "projectName": "DynamicProgramming_516c5416"
+        },
+        {
+            "type": "java",
             "name": "Launch LRUCacheMain",
             "request": "launch",
             "mainClass": "linked_list.LRUCacheMain",
