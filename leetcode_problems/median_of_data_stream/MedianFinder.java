@@ -16,11 +16,15 @@ class MedianFinder {
         if (maxHeap.size() == 0) {
             maxHeap.add(value);
         } else if (maxHeap.size() == minHeap.size()) {
-            if (value < maxHeap.peek())
+            //some element will go to maxHeap
+            if (value <= maxHeap.peek())
                 maxHeap.add(value);
             else {
-                maxHeap.add(minHeap.poll());
-                minHeap.add(value);
+                if (value >= minHeap.peek()) {
+                    maxHeap.add(minHeap.poll());
+                    minHeap.add(value);
+                } else
+                    maxHeap.add(value);
             }
 
         }
@@ -40,6 +44,10 @@ class MedianFinder {
                 maxHeap.add(value);
             }
         }
+        System.out.println("value: " + value);
+        System.out.println(maxHeap);
+        System.out.println(minHeap);
+        System.out.println(findMedian());
     }
 
     public double findMedian() {
