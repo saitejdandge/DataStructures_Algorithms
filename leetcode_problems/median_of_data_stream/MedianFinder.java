@@ -20,7 +20,7 @@ class MedianFinder {
             if (value <= maxHeap.peek())
                 maxHeap.add(value);
             else {
-                if (value >= minHeap.peek()) {
+                if (value > minHeap.peek()) {
                     maxHeap.add(minHeap.poll());
                     minHeap.add(value);
                 } else
@@ -37,7 +37,7 @@ class MedianFinder {
                     minHeap.add(maxHeap.poll());
                     maxHeap.add(value);
                 }
-            } else if (value > maxHeap.peek()) {
+            } else if (value >= maxHeap.peek()) {
                 minHeap.add(value);
             } else {
                 minHeap.add(maxHeap.poll());
