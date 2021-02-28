@@ -13,8 +13,9 @@ public class SuffixArray {
 
     public static List<Object> buildSuffixArray(String string) {
         ArrayList<Metadata> arrayList = new ArrayList<>();
-        for (int i = 0; i < string.length(); i++) {
-            arrayList.add(new Metadata(string.length() - i - 1, string.substring(string.length() - i - 1)));
+        int n = string.length();
+        for (int i = 0; i < n; i++) {
+            arrayList.add(new Metadata(n - i - 1, string.substring(n - i - 1)));
         }
         return arrayList.stream()
                 .sorted(Comparator.comparing(o -> o.value))
@@ -25,7 +26,6 @@ public class SuffixArray {
     static class Metadata {
         int position;
         String value;
-
         public Metadata(int position, String value) {
             this.position = position;
             this.value = value;
