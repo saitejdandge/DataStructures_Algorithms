@@ -127,7 +127,7 @@ public class LinkedList<E extends Comparable<E>> implements ListI<E> {
     }
 
     private int compare(E obj, Node<E> node) {
-        return ((Comparable<E>) obj).compareTo(node.data);
+        return obj.compareTo(node.data);
     }
 
     public boolean detectCycle() {
@@ -154,39 +154,6 @@ public class LinkedList<E extends Comparable<E>> implements ListI<E> {
     @Override
     public Iterator<E> iterator() {
         return new IteratorHelper();
-    }
-
-    public static class Node<E> {
-        Node<E> next;
-        E data;
-
-        private Node(E data) {
-            this.data = data;
-        }
-    }
-
-    private class IteratorHelper implements Iterator<E> {
-
-        private Node<E> index;
-
-        private IteratorHelper() {
-            index = head;
-        }
-
-        @Override
-        public boolean hasNext() {
-            return index != null;
-        }
-
-        @Override
-        public E next() {
-            if (!hasNext())
-                throw new NoSuchElementException();
-            E val = index.data;
-            index = index.next;
-            return val;
-        }
-
     }
 
     public void sort(Comparator<E> comparator) {
@@ -248,6 +215,39 @@ public class LinkedList<E extends Comparable<E>> implements ListI<E> {
             }
         }
         return resultHead;
+    }
+
+    public static class Node<E> {
+        Node<E> next;
+        E data;
+
+        private Node(E data) {
+            this.data = data;
+        }
+    }
+
+    private class IteratorHelper implements Iterator<E> {
+
+        private Node<E> index;
+
+        private IteratorHelper() {
+            index = head;
+        }
+
+        @Override
+        public boolean hasNext() {
+            return index != null;
+        }
+
+        @Override
+        public E next() {
+            if (!hasNext())
+                throw new NoSuchElementException();
+            E val = index.data;
+            index = index.next;
+            return val;
+        }
+
     }
 
 

@@ -7,9 +7,9 @@ import java.util.Map;
 
 class LRUCache {
 
-    private int capacity;
-    private Deque<Node> list = new LinkedList<>();
-    private Map<Integer, Node> map = new HashMap<>();
+    private final int capacity;
+    private final Deque<Node> list = new LinkedList<>();
+    private final Map<Integer, Node> map = new HashMap<>();
 
     public LRUCache(int capacity) {
         this.capacity = capacity;
