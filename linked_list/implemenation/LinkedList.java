@@ -1,9 +1,10 @@
 package linked_list.implemenation;
 
+import java.util.Comparator;
 import java.util.Iterator;
 import java.util.NoSuchElementException;
 
-public class LinkedList<E> implements ListI<E> {
+public class LinkedList<E extends Comparable<E>> implements ListI<E> {
 
     public Node<E> head;
     public Node<E> tail;
@@ -187,5 +188,67 @@ public class LinkedList<E> implements ListI<E> {
         }
 
     }
+
+    public void sort(Comparator<E> comparator) {
+        this.head = sort(this.head, comparator);
+    }
+
+    public void sort() {
+        this.head = sort(this.head, Comparable::compareTo);
+    }
+
+    private Node<E> sort(Node<E> current, Comparator<E> comparator) {
+        if (current == null || current.next == null)
+            return current;
+
+        Node<E> slow = current, prev = current, fast = current;
+        while (fast != null && fast.next != null) {
+            prev = slow;
+            slow = slow.next;
+            fast = fast.next.next;
+        }
+        prev.next = null;
+        //slow is mid point now
+        Node<E> left = sort(current, comparator);
+        Node<E> right = sort(slow, comparator);
+        return merge(left, right, comparator);
+    }
+
+    private Node<E> merge(Node<E> a, Node<E> b, Comparator<E> comparator) {
+
+        if (a == null)
+            return b;
+        else if (b == null)
+            return a;
+
+        Node<E> resultHead = null, resultTail = null;
+        while (a != null || b != null) {
+
+            if (a == null) {
+                resultTail.next = b;
+                break;
+            } else if (b == null) {
+                resultTail.next = a;
+                break;
+            } else {
+                Node<E> current;
+                if (comparator.compare(a.data, b.data) <= 0) {
+                    current = a;
+                    a = a.next;
+                } else {
+                    current = b;
+                    b = b.next;
+                }
+                if (resultHead == null) {
+                    resultHead = resultTail = current;
+                } else {
+                    resultTail.next = current;
+                    resultTail = resultTail.next;
+                }
+            }
+        }
+        return resultHead;
+    }
+
 
 }
