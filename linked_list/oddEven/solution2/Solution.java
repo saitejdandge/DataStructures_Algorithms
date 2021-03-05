@@ -2,7 +2,7 @@ package linked_list.oddEven.solution2;
 
 class ListNode {
     int val;
-  ListNode next;
+    ListNode next;
 
     ListNode() {
     }
@@ -16,39 +16,39 @@ class ListNode {
         this.next = next;
     }
 }
+
 class Solution {
     public ListNode oddEvenList(ListNode head) {
 
-        if(head==null||head.next==null||head.next.next==null)
+        if (head == null || head.next == null || head.next.next == null)
             return head;
 
-        ListNode oddHead=null,oddTail=null,evenHead=null,evenTail=null;
-        ListNode n=head;
-        int count=1;
-        while(n!=null){
-            if(count%2==1){
+        ListNode oddHead = null, oddTail = null, evenHead = null, evenTail = null;
+        ListNode n = head;
+        int count = 1;
+        while (n != null) {
+            if (count % 2 == 1) {
                 //addToOdd
-                if(oddHead==null)
-                    oddHead=oddTail=n;
-                else{
-                    oddTail.next=n;
-                    oddTail=oddTail.next;
+                if (oddHead == null)
+                    oddHead = oddTail = n;
+                else {
+                    oddTail.next = n;
+                    oddTail = oddTail.next;
                 }
-            }
-            else{
+            } else {
                 //addToEven
-                if(evenHead==null){
-                    evenTail=evenHead=n;
-                } else{
-                    evenTail.next=n;
-                    evenTail=evenTail.next;
+                if (evenHead == null) {
+                    evenTail = evenHead = n;
+                } else {
+                    evenTail.next = n;
+                    evenTail = evenTail.next;
                 }
             }
             count++;
-            n=n.next;
+            n = n.next;
         }
-        evenTail.next=null;
-        oddTail.next=evenHead;
+        evenTail.next = null;
+        oddTail.next = evenHead;
         return oddHead;
     }
 }

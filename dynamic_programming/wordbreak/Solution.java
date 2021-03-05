@@ -12,12 +12,12 @@ class Solution {
     }
 
     public static void main(String[] args) {
-        String s="catsanddog";
-        List<String>wordDict=new ArrayList<>();
+        String s = "catsanddog";
+        List<String> wordDict = new ArrayList<>();
         wordDict.add("cats");
         wordDict.add("and");
         wordDict.add("dog");
-        
+
         System.out.print(wordBreak(s, wordDict));
     }
 

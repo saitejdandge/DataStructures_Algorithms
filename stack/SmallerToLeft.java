@@ -6,7 +6,7 @@ public class SmallerToLeft {
 
     public static void main(String[] args) {
 
-        int a[] = { 4, 5, 2, 10, 8 };
+        int a[] = {4, 5, 2, 10, 8};
         int[] o = solve(a);
         for (int i : o)
             System.out.print(i + " ");

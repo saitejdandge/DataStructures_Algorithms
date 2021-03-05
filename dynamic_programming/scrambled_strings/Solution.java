@@ -15,7 +15,7 @@ public class Solution {
 
         int n = a.length();
         for (int i = 1; i <= n - 1; i++) {
-            boolean c1 = solve(a.substring(0, i), b.substring(n - i, n)) ;
+            boolean c1 = solve(a.substring(0, i), b.substring(n - i, n));
             boolean c2 = solve(a.substring(i, n), b.substring(0, n - i));
 
             boolean c3 = solve(a.substring(0, i), b.substring(0, i));

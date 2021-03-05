@@ -1,4 +1,4 @@
-package linked_list;
+package linked_list.implemenation;
 
 import java.util.Iterator;
 import java.util.NoSuchElementException;
@@ -7,6 +7,11 @@ public class LinkedList<E> implements ListI<E> {
 
     public Node<E> head;
     public Node<E> tail;
+    private int currentSize;
+
+    public LinkedList() {
+        this.currentSize = 0;
+    }
 
     public Node<E> getTail() {
         return tail;
@@ -14,21 +19,6 @@ public class LinkedList<E> implements ListI<E> {
 
     public Node<E> getHead() {
         return head;
-    }
-
-    private int currentSize;
-
-    public LinkedList() {
-        this.currentSize = 0;
-    }
-
-    public static class Node<E> {
-        Node<E> next;
-        E data;
-
-        private Node(E data) {
-            this.data = data;
-        }
     }
 
     @Override
@@ -163,6 +153,15 @@ public class LinkedList<E> implements ListI<E> {
     @Override
     public Iterator<E> iterator() {
         return new IteratorHelper();
+    }
+
+    public static class Node<E> {
+        Node<E> next;
+        E data;
+
+        private Node(E data) {
+            this.data = data;
+        }
     }
 
     private class IteratorHelper implements Iterator<E> {

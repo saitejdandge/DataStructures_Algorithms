@@ -26,6 +26,7 @@ public class SuffixArray {
     static class Metadata {
         int position;
         String value;
+
         public Metadata(int position, String value) {
             this.position = position;
             this.value = value;

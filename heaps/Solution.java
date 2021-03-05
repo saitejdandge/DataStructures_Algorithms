@@ -9,7 +9,7 @@ public class Solution {
         Heap<String> heap = new Heap<>();
 
         for (int i = 0; i < 110; i++)
-            heap.add((int) (Math.random() * (max - min + 1) + min)+"");
+            heap.add((int) (Math.random() * (max - min + 1) + min) + "");
 
         System.out.println("Size of heap " + heap.size());
 

@@ -6,7 +6,7 @@ public class GreaterToLeft {
 
     public static void main(String[] args) {
 
-        int a[] = { 4, 2, 14, 1, 3, 4, 2, 5 };
+        int a[] = {4, 2, 14, 1, 3, 4, 2, 5};
         int output[] = solve(a);
         for (int i : output) {
             System.out.print(i + " ");
@@ -21,13 +21,12 @@ public class GreaterToLeft {
         for (int i = 0; i < n; i++) {
 
             if (stack.isEmpty()) {
-            
+
                 output[counter++] = -1;
-            }
-             else if (stack.peek() > a[i]) {
-              
+            } else if (stack.peek() > a[i]) {
+
                 output[counter++] = stack.peek();
-            
+
             } else {
 
                 while (!stack.isEmpty() && stack.peek() <= a[i])

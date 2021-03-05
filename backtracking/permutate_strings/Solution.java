@@ -4,7 +4,7 @@ public class Solution {
 
     public static void main(String[] args) {
         String str = "abca";
-        solve(0, str.length()-1, str.toCharArray());
+        solve(0, str.length() - 1, str.toCharArray());
     }
 
     public static void solve(int l, int r, char[] a) {

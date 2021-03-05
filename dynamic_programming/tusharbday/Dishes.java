@@ -1,4 +1,4 @@
-package dynamic_programming. tusharbday;
+package dynamic_programming.tusharbday;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -40,8 +40,8 @@ public class Dishes {
 
         int sum = 0;
         for (int i = 0; i <= maxF; i++)
-            if (f.contains(i)){
-                System.out.println("f= "+i);
+            if (f.contains(i)) {
+                System.out.println("f= " + i);
                 sum += t[d.size()][i];
             }
 
@@ -75,9 +75,9 @@ public class Dishes {
                 if (d[i - 1] <= j) {
                     System.out.println("true " + c[i - 1] + t[i][j - d[i - 1]] + " vs " + t[i - 1][j]);
                     t[i][j] = Math.min(c[i - 1] + t[i][j - d[i - 1]], t[i - 1][j]);
-                } 
+                }
                 // else
-                    t[i][j] = t[i - 1][j];
+                t[i][j] = t[i - 1][j];
             }
         }
         for (int i = 0; i <= d.length; i++) {

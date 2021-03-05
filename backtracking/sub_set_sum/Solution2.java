@@ -4,7 +4,7 @@ public class Solution2 {
 
     public static void main(String[] args) {
 
-        int a[] = { 1, 1, 2, 1, 3, 4 };
+        int a[] = {1, 1, 2, 1, 3, 4};
         solve(a, 0, 4, new boolean[a.length]);
     }
 

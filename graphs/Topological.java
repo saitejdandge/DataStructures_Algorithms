@@ -10,7 +10,7 @@ public class Topological {
         TreeMap<Integer, List<Integer>> graph = new TreeMap<>();
         graph.put(0, Arrays.asList(new Integer[]{2, 1}));
         graph.put(2, Arrays.asList(new Integer[]{3}));
-        graph.put(1, Arrays.asList(new Integer[]{3,5}));
+        graph.put(1, Arrays.asList(new Integer[]{3, 5}));
         graph.put(3, null);
         graph.put(5, null);
         for (Integer i : graph.keySet()) {
@@ -30,7 +30,7 @@ public class Topological {
                     dfs(i, set, graph, stack);
                 }
             }
-        System.out.println("current "+curr);
+        System.out.println("current " + curr);
         stack.add(curr);
     }
 }

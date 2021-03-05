@@ -15,7 +15,7 @@ public class Solution {
         // for (int i = 0; i < n; i++)
         //     a[i] = i + 1;
 
-        int a[]={1,2,3,5,6};
+        int a[] = {1, 2, 3, 5, 6};
         // exponential 2~a.length
         System.out.println(solve(a.length, a, n));
     }

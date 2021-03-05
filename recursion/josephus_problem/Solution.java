@@ -11,7 +11,7 @@ public class Solution {
         List<Integer> list = new ArrayList<>();
         for (int i = 1; i <= n; i++)
             list.add(i);
-        System.out.println("Survived at " + solve(list, 0, 7-1));
+        System.out.println("Survived at " + solve(list, 0, 7 - 1));
 
     }
 

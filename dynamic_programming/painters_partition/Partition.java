@@ -1,7 +1,7 @@
 package dynamic_programming.painters_partition;
 
 public class Partition {
-    static int a[] = { 10, 89, 400, 30 };
+    static int a[] = {10, 89, 400, 30};
 
     public static void main(String[] args) {
         System.out.println(solve(0, a.length - 1, 2));

@@ -7,7 +7,7 @@ Given set of computers,
 */
 public class Solution {
 
-    static int[] data = { 1, 3, 2, 1, 3, 2, 1, 3, 2, 4, 3, 1, 1, 1, 2, 3 };
+    static int[] data = {1, 3, 2, 1, 3, 2, 1, 3, 2, 4, 3, 1, 1, 1, 2, 3};
     static int th = 4;
     static int minGrpSize = 2;
 

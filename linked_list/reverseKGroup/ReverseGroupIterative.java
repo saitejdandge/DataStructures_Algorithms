@@ -1,4 +1,4 @@
-package linked_list;
+package linked_list.reverseKGroup;
 
 public class ReverseGroupIterative {
     public static void main(String[] args) {
@@ -44,12 +44,11 @@ public class ReverseGroupIterative {
 
     private static class Node {
         int data;
+        Node next;
 
         public Node(int data) {
             this.data = data;
         }
-
-        Node next;
 
     }
 }

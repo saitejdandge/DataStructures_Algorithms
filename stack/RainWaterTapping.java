@@ -2,7 +2,7 @@ package stack;
 
 public class RainWaterTapping {
     public static void main(String[] args) {
-        int a[] = { 0, 0, 8, 0, 0 };
+        int a[] = {0, 0, 8, 0, 0};
         System.out.print(solve(a));
     }
 
@@ -18,7 +18,7 @@ public class RainWaterTapping {
         for (int i = n - 2; i >= 0; i--)
             mxr[i] = Math.max(mxr[i + 1], a[i]);
 
-    
+
         for (int i : mxl)
             System.out.print(i + " ");
         System.out.println();

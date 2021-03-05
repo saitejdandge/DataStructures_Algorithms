@@ -5,8 +5,10 @@ import java.util.ArrayList;
 /*checking if there's an atleast one subset sum =k*/
 public class Solution {
 
+    static ArrayList<ArrayList<Integer>> state = new ArrayList<>();
+
     public static void main(String[] args) {
-        int a[] = { 4, 3, 1, 2, -3, 2, 1 };
+        int a[] = {4, 3, 1, 2, -3, 2, 1};
         driver(a, 4);
         // print(driver(a, 4), a);
     }
@@ -40,18 +42,16 @@ public class Solution {
         }
     }
 
-    static ArrayList<ArrayList<Integer>> state = new ArrayList<>();
-
     public static boolean solve(int l, int progress, int total, int a[], boolean used[], int n,
-            ArrayList<Integer> currentSubSet) {
+                                ArrayList<Integer> currentSubSet) {
 
         if (l >= n)
             return false;
 
         if (total == progress) {
 
-            for(int i:currentSubSet)
-                System.out.print(i+" ");
+            for (int i : currentSubSet)
+                System.out.print(i + " ");
             System.out.println();
             state.add(currentSubSet);
 

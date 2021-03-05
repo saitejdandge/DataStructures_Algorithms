@@ -1,15 +1,13 @@
 package harish_problem;
 
-import java.util.HashMap;
-
 public class Solution {
 
     public static void main(String args[]) {
 
-        int a[] = { 2, 3 };
-        int b[] = { 4 };
-        int c[] = { 2, 3 };
-        int d[] = { 1, 2 };
+        int a[] = {2, 3};
+        int b[] = {4};
+        int c[] = {2, 3};
+        int d[] = {1, 2};
 
         int bg = 10;
         int state[][][][][][] = new int[a.length + 1][b.length + 1][c.length + 1][d.length + 1][5][bg + 1];
@@ -24,7 +22,7 @@ public class Solution {
     }
 
     public static int solve(int a[], int b[], int c[], int d[], int bg, int p1, int p2, int p3, int p4, int count,
-            int state[][][][][][]) {
+                            int state[][][][][][]) {
 
         if (state[p1][p2][p3][p4][count][bg] != -1)
             return state[p1][p2][p3][p4][count][bg];

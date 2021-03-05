@@ -1,27 +1,10 @@
-package linked_list;
+package linked_list.reverseKGroup;
 
 public class ReverseInGroupManual {
 
 
     public static void main(String[] args) {
 
-    }
-
-    public static class ListNode {
-        int val;
-        ListNode next;
-
-        ListNode() {
-        }
-
-        ListNode(int val) {
-            this.val = val;
-        }
-
-        ListNode(int val, ListNode next) {
-            this.val = val;
-            this.next = next;
-        }
     }
 
     public ListNode reverseKGroup(ListNode head, int k) {
@@ -61,6 +44,23 @@ public class ReverseInGroupManual {
         // prev is now head of input list
         return prev;
 
+    }
+
+    public static class ListNode {
+        int val;
+        ListNode next;
+
+        ListNode() {
+        }
+
+        ListNode(int val) {
+            this.val = val;
+        }
+
+        ListNode(int val, ListNode next) {
+            this.val = val;
+            this.next = next;
+        }
     }
 
 }

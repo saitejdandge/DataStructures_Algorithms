@@ -7,7 +7,7 @@ public class Solution {
 
     public static void main(String[] args) {
 
-        int c[] = { 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 };
+        int c[] = {1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1};
 
         String s = "aab";
         System.out.print(solve(s, 0, c));

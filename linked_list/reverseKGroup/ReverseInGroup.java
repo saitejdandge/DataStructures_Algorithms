@@ -1,4 +1,4 @@
-package linked_list;
+package linked_list.reverseKGroup;
 
 import java.util.Arrays;
 import java.util.Collections;

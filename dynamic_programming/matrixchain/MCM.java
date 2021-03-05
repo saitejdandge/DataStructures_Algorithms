@@ -1,8 +1,8 @@
-package dynamic_programming. matrixchain;
+package dynamic_programming.matrixchain;
 
 public class MCM {
 
-    static int a[] = { 1, 2, 3,4};
+    static int a[] = {1, 2, 3, 4};
 
     public static void main(String[] args) {
         System.out.println(solve(1, a.length - 1));

@@ -15,7 +15,7 @@ public class Solution {
         bst.remove(6);
         bst.remove(8);
         bst.add(20);
-        System.out.println(); 
+        System.out.println();
 
         bst.remove(10);
         bst.print();

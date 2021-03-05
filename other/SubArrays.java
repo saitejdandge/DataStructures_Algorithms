@@ -1,7 +1,8 @@
 package other;
+
 public class SubArrays {
 
-    static int a[] = { 4, 8, 5, 2, 4 };
+    static int a[] = {4, 8, 5, 2, 4};
 
     static int value = 4;
 
@@ -27,7 +28,7 @@ public class SubArrays {
             int right = solve(k + 1, j);
             int temp = left + right;
             if (i == 0 && j == a.length - 1)
-                System.out.println(temp + ":"+left+":"+right);
+                System.out.println(temp + ":" + left + ":" + right);
             ans = Math.max(temp, ans);
         }
         return ans;

@@ -5,7 +5,7 @@ public class PP {
 
     public static void main(String[] args) {
 
-        System.out.println("Number of min partitions are : "+solve(0,str.length()-1));
+        System.out.println("Number of min partitions are : " + solve(0, str.length() - 1));
     }
 
     static boolean isPalindrome(String str, int i, int j) {
@@ -21,7 +21,7 @@ public class PP {
     }
 
     static int solve(int i, int j) {
-        
+
         if (i >= j) {
             return 0;
         }

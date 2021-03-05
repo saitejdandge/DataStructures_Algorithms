@@ -1,8 +1,8 @@
 package hash;
 
-import java.util.Iterator;
+import linked_list.implemenation.LinkedList;
 
-import linked_list.LinkedList;
+import java.util.Iterator;
 
 public class Hash<K, V> implements IHash<K> {
 
@@ -78,6 +78,11 @@ public class Hash<K, V> implements IHash<K> {
 
     }
 
+    @Override
+    public Iterator<K> iterator() {
+        return new IteratorHelper<>();
+    }
+
     class HashElement implements Comparable<HashElement> {
 
         K key;
@@ -97,20 +102,6 @@ public class Hash<K, V> implements IHash<K> {
 
     private class IteratorHelper<T> implements Iterator<T> {
 
-        @Override
-        public boolean hasNext() {
-            return position < keys.length;
-        }
-
-        @Override
-        public T next() {
-            if (!hasNext())
-                return null;
-            else
-                return keys[position++];
-
-        }
-
         T[] keys;
         int position;
 
@@ -127,11 +118,20 @@ public class Hash<K, V> implements IHash<K> {
 
         }
 
-    }
+        @Override
+        public boolean hasNext() {
+            return position < keys.length;
+        }
 
-    @Override
-    public Iterator<K> iterator() {
-        return new IteratorHelper<>();
+        @Override
+        public T next() {
+            if (!hasNext())
+                return null;
+            else
+                return keys[position++];
+
+        }
+
     }
 
 }

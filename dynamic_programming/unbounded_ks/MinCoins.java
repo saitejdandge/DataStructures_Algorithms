@@ -1,4 +1,4 @@
-package dynamic_programming. unbounded_ks;
+package dynamic_programming.unbounded_ks;
 
 public class MinCoins {
     static int data[];
@@ -40,7 +40,7 @@ public class MinCoins {
         for (int i = 2; i <= n; i++) {
             for (int j = 1; j <= sum; j++) {
                 if (data[i - 1] <= j) {
-                    t[i][j] = Math.min(t[i - 1][j],1+ t[i][j - data[i - 1]]);
+                    t[i][j] = Math.min(t[i - 1][j], 1 + t[i][j - data[i - 1]]);
                 } else
                     t[i][j] = t[i - 1][j];
             }

@@ -1,4 +1,4 @@
-package dynamic_programming. LCS;
+package dynamic_programming.LCS;
 
 public class LongestRepeatingSubSeq {
     static String a = "AABEBCDD";

@@ -1,4 +1,4 @@
-package dynamic_programming. LCS;
+package dynamic_programming.LCS;
 
 public class PatternMatching {
 
@@ -14,7 +14,7 @@ public class PatternMatching {
 
         int lcs = LCS.solveBottomUp(a, b);
 
-        return a.length()==lcs;
+        return a.length() == lcs;
     }
 
 }

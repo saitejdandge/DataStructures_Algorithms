@@ -3,7 +3,7 @@ package backtracking.rat_in_a_maze;
 public class Solution {
     public static void main(String[] args) {
 
-        int maze[][] = { { 1, 0, 0, 0 }, { 1, 1, 0, 1 }, { 0, 1, 0, 0 }, { 1, 1, 1, 1 } };
+        int maze[][] = {{1, 0, 0, 0}, {1, 1, 0, 1}, {0, 1, 0, 0}, {1, 1, 1, 1}};
         int output[][] = new int[4][4];
         solve(0, 0, maze, output, 4);
         for (int i = 0; i < 4; i++) {

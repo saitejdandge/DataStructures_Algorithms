@@ -6,7 +6,7 @@ public class GreaterToRight {
 
     public static void main(String[] args) {
 
-        int a[] = { 5, 2, 4, 3, 1, 14, 2, 4 };
+        int a[] = {5, 2, 4, 3, 1, 14, 2, 4};
         int o[] = solve(a);
         for (int i : o)
             System.out.print(i + " ");

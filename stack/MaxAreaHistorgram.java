@@ -5,7 +5,7 @@ import java.util.Stack;
 public class MaxAreaHistorgram {
 
     public static void main(String[] args) {
-        int h[] = { 6, 2, 5, 4, 5, 1, 6 };
+        int h[] = {6, 2, 5, 4, 5, 1, 6};
         System.out.print(solve(h));
     }
 
@@ -14,7 +14,7 @@ public class MaxAreaHistorgram {
         int n = a.length;
         int[] left = nsl(a);
         int[] right = nsr(a);
-        
+
         int max = Integer.MIN_VALUE;
         for (int i = 0; i < n; i++) {
 

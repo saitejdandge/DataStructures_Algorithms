@@ -2,7 +2,7 @@ package dynamic_programming.LCS;
 
 public class LongestNonDecreasing {
 
-    static int a[] = { -1, 3, 4, 5, 2, 2, 2, 2 };
+    static int a[] = {-1, 3, 4, 5, 2, 2, 2, 2};
 
     public static void main(String[] args) {
         System.out.println(solve());

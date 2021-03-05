@@ -2,7 +2,7 @@ package dbs;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.*;
+import java.util.Scanner;
 
 public class ArraySum {
 
@@ -12,32 +12,28 @@ public class ArraySum {
     }
 
     public static List<Integer> solve() {
-        Scanner s=new Scanner(System.in);
+        Scanner s = new Scanner(System.in);
 
-        int n=s.nextInt();
-        int m=s.nextInt();
-        int t[][]=new int[n][m];
-        int i,j;
-        for(i=0;i<n;i++)
-        {
-            for(j=0;j<m;j++)
-            {
-                t[i][j]=s.nextInt();
+        int n = s.nextInt();
+        int m = s.nextInt();
+        int t[][] = new int[n][m];
+        int i, j;
+        for (i = 0; i < n; i++) {
+            for (j = 0; j < m; j++) {
+                t[i][j] = s.nextInt();
             }
         }
         int q = s.nextInt();
-        int input[][]=new int[q][2];
-        for(i=0;i<q;i++)
-        {
-            for(j=0;j<2;j++)
-            {
-                input[i][j]=s.nextInt();
+        int input[][] = new int[q][2];
+        for (i = 0; i < q; i++) {
+            for (j = 0; j < 2; j++) {
+                input[i][j] = s.nextInt();
             }
         }
-        for(int x[]:input)
-            for(int y:x)
+        for (int x[] : input)
+            for (int y : x)
                 System.out.println(y);
-        List<Integer> sums=getSums(t);
+        List<Integer> sums = getSums(t);
         System.out.println(t);
         System.out.println(sums);
         List<Integer> result = new ArrayList<>();

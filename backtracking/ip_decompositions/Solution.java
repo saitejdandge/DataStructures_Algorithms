@@ -4,7 +4,7 @@ public class Solution {
 
     public static void main(String[] args) {
 
-        int output[] = { -1, -1, -1, -1 };
+        int output[] = {-1, -1, -1, -1};
         solve("25525511135", output, 0);
     }
 

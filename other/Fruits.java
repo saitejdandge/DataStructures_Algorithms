@@ -1,12 +1,13 @@
 package other;
+
 import java.util.ArrayList;
 import java.util.List;
 
 public class Fruits {
 
-    static int t[] = { 2, 3, 5 };
-    static int count[] = { 2, 2, 1 };
-    static int cost[] = { 5, 5, 20 };
+    static int t[] = {2, 3, 5};
+    static int count[] = {2, 2, 1};
+    static int cost[] = {5, 5, 20};
     static int s = 10;
 
     public static void main(String[] args) {

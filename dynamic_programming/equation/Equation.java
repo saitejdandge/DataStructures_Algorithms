@@ -2,7 +2,7 @@ package dynamic_programming.equation;
 
 public class Equation {
 
-    static int[] coeff = { 1, 2, 3 };
+    static int[] coeff = {1, 2, 3};
 
     public static void main(String[] args) {
 

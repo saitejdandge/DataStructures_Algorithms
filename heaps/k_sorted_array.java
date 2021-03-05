@@ -6,7 +6,7 @@ public class k_sorted_array {
 
     public static void main(String[] args) {
 
-        int a[] = { 6, 5, 3, 2, 8, 9, 10 };
+        int a[] = {6, 5, 3, 2, 8, 9, 10};
         int k = 3;
         PriorityQueue<Integer> p = new PriorityQueue<>();
         int position = 0;

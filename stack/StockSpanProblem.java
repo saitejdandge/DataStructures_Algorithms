@@ -6,7 +6,7 @@ public class StockSpanProblem {
 
     public static void main(String[] args) {
 
-        int a[] = { 100, 80, 60, 70, 60, 75, 85 };
+        int a[] = {100, 80, 60, 70, 60, 75, 85};
         int[] o = solve(a);
         for (int i : o)
             System.out.print(i + " ");

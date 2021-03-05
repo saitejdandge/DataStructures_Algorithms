@@ -8,13 +8,15 @@ public class k_smallest {
     public static void main(String[] args) {
 
         int k = 3;
-        int a[] = { 7, 10, 4, 3, 20, 15 };
+        int a[] = {7, 10, 4, 3, 20, 15};
 
         PriorityQueue<Integer> p = new PriorityQueue<>(new Comparator<Integer>() {
 
             public int compare(Integer o1, Integer o2) {
-                return o2-o1;
-            };
+                return o2 - o1;
+            }
+
+            ;
         });
 
         for (int i : a) {

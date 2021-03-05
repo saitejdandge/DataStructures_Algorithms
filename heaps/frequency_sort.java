@@ -8,7 +8,7 @@ public class frequency_sort {
 
     public static void main(String[] args) {
 
-        int a[] = { 1, 1, 2, 3, 4, 4, 2, 2, 1, 3, 5, 3, 1, 2, 3, 6 };
+        int a[] = {1, 1, 2, 3, 4, 4, 2, 2, 1, 3, 5, 3, 1, 2, 3, 6};
 
         HashMap<Integer, Integer> map = new HashMap<>();
         for (int i : a) {

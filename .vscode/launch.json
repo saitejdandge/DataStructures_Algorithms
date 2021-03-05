@@ -1,623 +1,623 @@
 {
-    // Use IntelliSense to learn about possible attributes.
-    // Hover to view descriptions of existing attributes.
-    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
-    "version": "0.2.0",
-    "configurations": [
-        {
-            "type": "java",
-            "name": "Launch Solution",
-            "request": "launch",
-            "mainClass": "squadstack.Solution",
-            "projectName": "DynamicProgramming_516c5416"
-        },
-        {
-            "type": "java",
-            "name": "Launch LRUCacheMain",
-            "request": "launch",
-            "mainClass": "linked_list.LRUCacheMain",
-            "projectName": "DynamicProgramming_516c5416"
-        },
-        {
-            "type": "java",
-            "name": "Launch Solution",
-            "request": "launch",
-            "mainClass": "harish_problem.Solution",
-            "projectName": "DynamicProgramming_516c5416"
-        },
-        {
-            "type": "java",
-            "name": "Launch Solution",
-            "request": "launch",
-            "mainClass": "leetcode_problems.hackerearth.string.Solution",
-            "projectName": "DynamicProgramming_516c5416"
-        },
-        {
-            "type": "java",
-            "name": "Launch SubArrays",
-            "request": "launch",
-            "mainClass": "other.SubArrays",
-            "projectName": "DynamicProgramming_516c5416"
-        },
-        {
-            "type": "java",
-            "name": "Launch Solution",
-            "request": "launch",
-            "mainClass": "leetcode_problems.t3sum.Solution",
-            "projectName": "DynamicProgramming_516c5416"
-        },
-        {
-            "type": "java",
-            "name": "Launch Solution",
-            "request": "launch",
-            "mainClass": "leetcode_problems.no_of_islands.Solution",
-            "projectName": "DynamicProgramming_516c5416"
-        },
-        {
-            "type": "java",
-            "name": "Launch Solution",
-            "request": "launch",
-            "mainClass": "leetcode_problems.rotten_oranges.Solution",
-            "projectName": "DynamicProgramming_516c5416"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - PrintList",
-            "request": "launch",
-            "mainClass": "linked_list.PrintList",
-            "projectName": "DynamicProgramming_516c5416"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - EvaluatingExpression",
-            "request": "launch",
-            "mainClass": "stack.EvaluatingExpression",
-            "projectName": "DynamicProgramming_516c5416"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - RainWaterTapping",
-            "request": "launch",
-            "mainClass": "stack.RainWaterTapping",
-            "projectName": "DynamicProgramming_516c5416"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - MaxAreaBinaryMatrix",
-            "request": "launch",
-            "mainClass": "stack.MaxAreaBinaryMatrix",
-            "projectName": "DynamicProgramming_516c5416"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - MaxAreaHistorgram",
-            "request": "launch",
-            "mainClass": "stack.MaxAreaHistorgram",
-            "projectName": "DynamicProgramming_516c5416"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - SmallerToRight",
-            "request": "launch",
-            "mainClass": "stack.SmallerToRight",
-            "projectName": "DynamicProgramming_516c5416"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - SmallerToLeft",
-            "request": "launch",
-            "mainClass": "stack.SmallerToLeft",
-            "projectName": "DynamicProgramming_516c5416"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - StockSpanProblem",
-            "request": "launch",
-            "mainClass": "stack.StockSpanProblem",
-            "projectName": "DynamicProgramming_516c5416"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - GreaterToLeft",
-            "request": "launch",
-            "mainClass": "stack.GreaterToLeft",
-            "projectName": "DynamicProgramming_516c5416"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - GreaterToRight",
-            "request": "launch",
-            "mainClass": "stack.GreaterToRight",
-            "projectName": "DynamicProgramming_516c5416"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - Solution",
-            "request": "launch",
-            "mainClass": "linked_list.Solution",
-            "projectName": "DynamicProgramming_516c5416"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - Solution",
-            "request": "launch",
-            "mainClass": "vineetha_s_problem.Solution",
-            "projectName": "DynamicProgramming_516c5416"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - connect_ropes_min_cost",
-            "request": "launch",
-            "mainClass": "heaps.connect_ropes_min_cost",
-            "projectName": "DynamicProgramming_516c5416"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - frequency_sort",
-            "request": "launch",
-            "mainClass": "heaps.frequency_sort",
-            "projectName": "DynamicProgramming_516c5416"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - k_freq_numbers",
-            "request": "launch",
-            "mainClass": "heaps.k_freq_numbers",
-            "projectName": "DynamicProgramming_516c5416"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - k_closest_numbers",
-            "request": "launch",
-            "mainClass": "heaps.k_closest_numbers",
-            "projectName": "DynamicProgramming_516c5416"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - k_sorted_array",
-            "request": "launch",
-            "mainClass": "heaps.k_sorted_array",
-            "projectName": "DynamicProgramming_516c5416"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - k_smallest",
-            "request": "launch",
-            "mainClass": "heaps.k_smallest",
-            "projectName": "DynamicProgramming_516c5416"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - Solution",
-            "request": "launch",
-            "mainClass": "bst.Solution",
-            "projectName": "DynamicProgramming_516c5416"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - Solution",
-            "request": "launch",
-            "mainClass": "heaps.Solution",
-            "projectName": "DynamicProgramming_516c5416"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - Solution",
-            "request": "launch",
-            "mainClass": "akshay_s_problem.Solution",
-            "projectName": "DynamicProgramming_516c5416"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - Solution2",
-            "request": "launch",
-            "mainClass": "backtracking.sub_set_sum.Solution2",
-            "projectName": "DynamicProgramming_516c5416"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - Solution",
-            "request": "launch",
-            "mainClass": "backtracking.ip_decompositions.Solution",
-            "projectName": "DynamicProgramming_516c5416"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - Solution",
-            "request": "launch",
-            "mainClass": "backtracking.sub_set_sum.Solution",
-            "projectName": "DynamicProgramming_516c5416"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - Solution",
-            "request": "launch",
-            "mainClass": "backtracking.k_buckets_equal_sum.Solution",
-            "projectName": "DynamicProgramming_516c5416"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - Solution",
-            "request": "launch",
-            "mainClass": "backtracking.sudoko_solver.Solution",
-            "projectName": "DynamicProgramming_516c5416"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - Solution",
-            "request": "launch",
-            "mainClass": "backtracking.rat_in_a_maze.Solution",
-            "projectName": "DynamicProgramming_516c5416"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - Solution",
-            "request": "launch",
-            "mainClass": "backtracking.n_queen.Solution",
-            "projectName": "DynamicProgramming_516c5416"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - Solution",
-            "request": "launch",
-            "mainClass": "backtracking.permutate_strings_ibh.Solution",
-            "projectName": "DynamicProgramming_516c5416"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - Solution",
-            "request": "launch",
-            "mainClass": "backtracking.permutate_strings.Solution",
-            "projectName": "DynamicProgramming_516c5416"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - Solution",
-            "request": "launch",
-            "mainClass": "recursion.josephus_problem.Solution",
-            "projectName": "DynamicProgramming_516c5416"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - Solution",
-            "request": "launch",
-            "mainClass": "recursion.n_bit_binary_print.Solution",
-            "projectName": "DynamicProgramming_516c5416"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - Solution",
-            "request": "launch",
-            "mainClass": "recursion.n_bit_binary_1_greater_than_0_prefix.Solution",
-            "projectName": "DynamicProgramming_516c5416"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - Solution",
-            "request": "launch",
-            "mainClass": "recursion.print_balanced_paranthesis_diff_styles.Solution",
-            "projectName": "DynamicProgramming_516c5416"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - Solution",
-            "request": "launch",
-            "mainClass": "recursion.differnt_styles_of_braces.Solution",
-            "projectName": "DynamicProgramming_516c5416"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - Solution",
-            "request": "launch",
-            "mainClass": "recursion.print_balanced_paranthesis.Solution",
-            "projectName": "DynamicProgramming_516c5416"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - Solution",
-            "request": "launch",
-            "mainClass": "recursion.permutations_with_letter_cases.Solution",
-            "projectName": "DynamicProgramming_516c5416"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - Solution",
-            "request": "launch",
-            "mainClass": "recursion.permutations_with_spaces.Solution",
-            "projectName": "DynamicProgramming_516c5416"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - Solution",
-            "request": "launch",
-            "mainClass": "recursion.print_sub_sets.Solution",
-            "projectName": "DynamicProgramming_516c5416"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - Solution",
-            "request": "launch",
-            "mainClass": "recursion.towers_of_hanoi.Solution",
-            "projectName": "DynamicProgramming_516c5416"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - Solution",
-            "request": "launch",
-            "mainClass": "recursion.reverse_stack.Solution",
-            "projectName": "DynamicProgramming_516c5416"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - Solution",
-            "request": "launch",
-            "mainClass": "recursion.delete_middle_element.Solution",
-            "projectName": "DynamicProgramming_516c5416"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - Solution_ArrayList",
-            "request": "launch",
-            "mainClass": "recursion.sort_array_stack.Solution_ArrayList",
-            "projectName": "DynamicProgramming_516c5416"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - Solution",
-            "request": "launch",
-            "mainClass": "recursion.sort_array_stack.Solution",
-            "projectName": "DynamicProgramming_516c5416"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - Solution",
-            "request": "launch",
-            "mainClass": "recursion.printing_n_values.Solution",
-            "projectName": "DynamicProgramming_516c5416"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - Solution",
-            "request": "launch",
-            "mainClass": "wordbreak.Solution",
-            "projectName": "DynamicProgramming_516c5416"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - SubArrays",
-            "request": "launch",
-            "mainClass": "SubArrays",
-            "projectName": "DynamicProgramming_516c5416"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - LCM",
-            "request": "launch",
-            "mainClass": "LCM",
-            "projectName": "DynamicProgramming_516c5416"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - Fruits",
-            "request": "launch",
-            "mainClass": "Fruits",
-            "projectName": "DynamicProgramming_516c5416"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - LIS",
-            "request": "launch",
-            "mainClass": "LCS.LIS",
-            "projectName": "DynamicProgramming_516c5416"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - LongestNonDecreasing",
-            "request": "launch",
-            "mainClass": "LCS.LongestNonDecreasing",
-            "projectName": "DynamicProgramming_516c5416"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - Solution",
-            "request": "launch",
-            "mainClass": "regular_exps.Solution",
-            "projectName": "DynamicProgramming_516c5416"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - Partition",
-            "request": "launch",
-            "mainClass": "painters_partition.Partition",
-            "projectName": "DynamicProgramming_516c5416"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - Solution",
-            "request": "launch",
-            "mainClass": "scrambled_strings.Solution",
-            "projectName": "DynamicProgramming_516c5416"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - BNS1",
-            "request": "launch",
-            "mainClass": "stocks.BNS1",
-            "projectName": "DynamicProgramming_516c5416"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - Puzzle",
-            "request": "launch",
-            "mainClass": "Puzzle",
-            "projectName": "DynamicProgramming_516c5416"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - MinCoins",
-            "request": "launch",
-            "mainClass": "unbounded_ks.MinCoins",
-            "projectName": "DynamicProgramming_516c5416"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - Dishes",
-            "request": "launch",
-            "mainClass": "tusharbday.Dishes",
-            "projectName": "DynamicProgramming_516c5416"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - Paran",
-            "request": "launch",
-            "mainClass": "paranthesization.Paran",
-            "projectName": "DynamicProgramming_516c5416"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - Solution",
-            "request": "launch",
-            "mainClass": "edit_distance.Solution",
-            "projectName": "DynamicProgramming_516c5416"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - MaxSubArray2D",
-            "request": "launch",
-            "mainClass": "kadane.MaxSubArray2D",
-            "projectName": "DynamicProgramming_516c5416"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - MaxSubArray",
-            "request": "launch",
-            "mainClass": "kadane.MaxSubArray",
-            "projectName": "DynamicProgramming_516c5416"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - WaysToDecode",
-            "request": "launch",
-            "mainClass": "general.WaysToDecode",
-            "projectName": "DynamicProgramming_516c5416"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - IsInterLeaving",
-            "request": "launch",
-            "mainClass": "LCS.IsInterLeaving",
-            "projectName": "DynamicProgramming_516c5416"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - DisntictSubSequences",
-            "request": "launch",
-            "mainClass": "LCS.DisntictSubSequences",
-            "projectName": "DynamicProgramming_516c5416"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - PatternMatching",
-            "request": "launch",
-            "mainClass": "LCS.PatternMatching",
-            "projectName": "DynamicProgramming_516c5416"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - LongestRepeatingSubSeq",
-            "request": "launch",
-            "mainClass": "LCS.LongestRepeatingSubSeq",
-            "projectName": "DynamicProgramming_516c5416"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - LongestPalindromeSubSeq",
-            "request": "launch",
-            "mainClass": "LCS.LongestPalindromeSubSeq",
-            "projectName": "DynamicProgramming_516c5416"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - ConvertAToB",
-            "request": "launch",
-            "mainClass": "LCS.ConvertAToB",
-            "projectName": "DynamicProgramming_516c5416"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - ShortestCommonSuperSeq",
-            "request": "launch",
-            "mainClass": "LCS.ShortestCommonSuperSeq",
-            "projectName": "DynamicProgramming_516c5416"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - LCS",
-            "request": "launch",
-            "mainClass": "LCS.LCS",
-            "projectName": "DynamicProgramming_516c5416"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - Solution",
-            "request": "launch",
-            "mainClass": "computer_groups.Solution",
-            "projectName": "DynamicProgramming_516c5416"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - Equation",
-            "request": "launch",
-            "mainClass": "equation.Equation",
-            "projectName": "DynamicProgramming_516c5416"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - SubsetSum",
-            "request": "launch",
-            "mainClass": "subsetsum.SubsetSum",
-            "projectName": "DynamicProgramming_516c5416"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - Knapsack",
-            "request": "launch",
-            "mainClass": "knapsack.Knapsack",
-            "projectName": "DynamicProgramming_516c5416"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - knapsack",
-            "request": "launch",
-            "mainClass": "knapsack.knapsack",
-            "projectName": "DynamicProgramming_516c5416"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - Group",
-            "request": "launch",
-            "mainClass": "groupresources.Group",
-            "projectName": "DynamicProgramming_516c5416"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - PP",
-            "request": "launch",
-            "mainClass": "prime_partition.PP",
-            "projectName": "DynamicProgramming_516c5416"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - MCM",
-            "request": "launch",
-            "mainClass": "matrixchain.MCM",
-            "projectName": "DynamicProgramming_516c5416"
-        },
-        {
-            "type": "java",
-            "name": "Debug (Launch) - Current File",
-            "request": "launch",
-            "mainClass": "${file}"
-        }
-    ]
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Launch Solution",
+      "request": "launch",
+      "mainClass": "squadstack.Solution",
+      "projectName": "DynamicProgramming_516c5416"
+    },
+    {
+      "type": "java",
+      "name": "Launch LRUCacheMain",
+      "request": "launch",
+      "mainClass": "linked_list.LRUCacheMain",
+      "projectName": "DynamicProgramming_516c5416"
+    },
+    {
+      "type": "java",
+      "name": "Launch Solution",
+      "request": "launch",
+      "mainClass": "harish_problem.Solution",
+      "projectName": "DynamicProgramming_516c5416"
+    },
+    {
+      "type": "java",
+      "name": "Launch Solution",
+      "request": "launch",
+      "mainClass": "leetcode_problems.hackerearth.string.Solution",
+      "projectName": "DynamicProgramming_516c5416"
+    },
+    {
+      "type": "java",
+      "name": "Launch SubArrays",
+      "request": "launch",
+      "mainClass": "other.SubArrays",
+      "projectName": "DynamicProgramming_516c5416"
+    },
+    {
+      "type": "java",
+      "name": "Launch Solution",
+      "request": "launch",
+      "mainClass": "leetcode_problems.t3sum.Solution",
+      "projectName": "DynamicProgramming_516c5416"
+    },
+    {
+      "type": "java",
+      "name": "Launch Solution",
+      "request": "launch",
+      "mainClass": "leetcode_problems.no_of_islands.Solution",
+      "projectName": "DynamicProgramming_516c5416"
+    },
+    {
+      "type": "java",
+      "name": "Launch Solution",
+      "request": "launch",
+      "mainClass": "leetcode_problems.rotten_oranges.Solution",
+      "projectName": "DynamicProgramming_516c5416"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - PrintList",
+      "request": "launch",
+      "mainClass": "linked_list.PrintList",
+      "projectName": "DynamicProgramming_516c5416"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - EvaluatingExpression",
+      "request": "launch",
+      "mainClass": "stack.EvaluatingExpression",
+      "projectName": "DynamicProgramming_516c5416"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - RainWaterTapping",
+      "request": "launch",
+      "mainClass": "stack.RainWaterTapping",
+      "projectName": "DynamicProgramming_516c5416"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - MaxAreaBinaryMatrix",
+      "request": "launch",
+      "mainClass": "stack.MaxAreaBinaryMatrix",
+      "projectName": "DynamicProgramming_516c5416"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - MaxAreaHistorgram",
+      "request": "launch",
+      "mainClass": "stack.MaxAreaHistorgram",
+      "projectName": "DynamicProgramming_516c5416"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - SmallerToRight",
+      "request": "launch",
+      "mainClass": "stack.SmallerToRight",
+      "projectName": "DynamicProgramming_516c5416"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - SmallerToLeft",
+      "request": "launch",
+      "mainClass": "stack.SmallerToLeft",
+      "projectName": "DynamicProgramming_516c5416"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - StockSpanProblem",
+      "request": "launch",
+      "mainClass": "stack.StockSpanProblem",
+      "projectName": "DynamicProgramming_516c5416"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - GreaterToLeft",
+      "request": "launch",
+      "mainClass": "stack.GreaterToLeft",
+      "projectName": "DynamicProgramming_516c5416"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - GreaterToRight",
+      "request": "launch",
+      "mainClass": "stack.GreaterToRight",
+      "projectName": "DynamicProgramming_516c5416"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Solution",
+      "request": "launch",
+      "mainClass": "linked_list.Solution",
+      "projectName": "DynamicProgramming_516c5416"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Solution",
+      "request": "launch",
+      "mainClass": "vineetha_s_problem.Solution",
+      "projectName": "DynamicProgramming_516c5416"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - connect_ropes_min_cost",
+      "request": "launch",
+      "mainClass": "heaps.connect_ropes_min_cost",
+      "projectName": "DynamicProgramming_516c5416"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - frequency_sort",
+      "request": "launch",
+      "mainClass": "heaps.frequency_sort",
+      "projectName": "DynamicProgramming_516c5416"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - k_freq_numbers",
+      "request": "launch",
+      "mainClass": "heaps.k_freq_numbers",
+      "projectName": "DynamicProgramming_516c5416"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - k_closest_numbers",
+      "request": "launch",
+      "mainClass": "heaps.k_closest_numbers",
+      "projectName": "DynamicProgramming_516c5416"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - k_sorted_array",
+      "request": "launch",
+      "mainClass": "heaps.k_sorted_array",
+      "projectName": "DynamicProgramming_516c5416"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - k_smallest",
+      "request": "launch",
+      "mainClass": "heaps.k_smallest",
+      "projectName": "DynamicProgramming_516c5416"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Solution",
+      "request": "launch",
+      "mainClass": "bst.Solution",
+      "projectName": "DynamicProgramming_516c5416"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Solution",
+      "request": "launch",
+      "mainClass": "heaps.Solution",
+      "projectName": "DynamicProgramming_516c5416"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Solution",
+      "request": "launch",
+      "mainClass": "akshay_s_problem.Solution",
+      "projectName": "DynamicProgramming_516c5416"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Solution2",
+      "request": "launch",
+      "mainClass": "backtracking.sub_set_sum.Solution2",
+      "projectName": "DynamicProgramming_516c5416"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Solution",
+      "request": "launch",
+      "mainClass": "backtracking.ip_decompositions.Solution",
+      "projectName": "DynamicProgramming_516c5416"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Solution",
+      "request": "launch",
+      "mainClass": "backtracking.sub_set_sum.Solution",
+      "projectName": "DynamicProgramming_516c5416"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Solution",
+      "request": "launch",
+      "mainClass": "backtracking.k_buckets_equal_sum.Solution",
+      "projectName": "DynamicProgramming_516c5416"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Solution",
+      "request": "launch",
+      "mainClass": "backtracking.sudoko_solver.Solution",
+      "projectName": "DynamicProgramming_516c5416"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Solution",
+      "request": "launch",
+      "mainClass": "backtracking.rat_in_a_maze.Solution",
+      "projectName": "DynamicProgramming_516c5416"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Solution",
+      "request": "launch",
+      "mainClass": "backtracking.n_queen.Solution",
+      "projectName": "DynamicProgramming_516c5416"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Solution",
+      "request": "launch",
+      "mainClass": "backtracking.permutate_strings_ibh.Solution",
+      "projectName": "DynamicProgramming_516c5416"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Solution",
+      "request": "launch",
+      "mainClass": "backtracking.permutate_strings.Solution",
+      "projectName": "DynamicProgramming_516c5416"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Solution",
+      "request": "launch",
+      "mainClass": "recursion.josephus_problem.Solution",
+      "projectName": "DynamicProgramming_516c5416"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Solution",
+      "request": "launch",
+      "mainClass": "recursion.n_bit_binary_print.Solution",
+      "projectName": "DynamicProgramming_516c5416"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Solution",
+      "request": "launch",
+      "mainClass": "recursion.n_bit_binary_1_greater_than_0_prefix.Solution",
+      "projectName": "DynamicProgramming_516c5416"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Solution",
+      "request": "launch",
+      "mainClass": "recursion.print_balanced_paranthesis_diff_styles.Solution",
+      "projectName": "DynamicProgramming_516c5416"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Solution",
+      "request": "launch",
+      "mainClass": "recursion.differnt_styles_of_braces.Solution",
+      "projectName": "DynamicProgramming_516c5416"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Solution",
+      "request": "launch",
+      "mainClass": "recursion.print_balanced_paranthesis.Solution",
+      "projectName": "DynamicProgramming_516c5416"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Solution",
+      "request": "launch",
+      "mainClass": "recursion.permutations_with_letter_cases.Solution",
+      "projectName": "DynamicProgramming_516c5416"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Solution",
+      "request": "launch",
+      "mainClass": "recursion.permutations_with_spaces.Solution",
+      "projectName": "DynamicProgramming_516c5416"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Solution",
+      "request": "launch",
+      "mainClass": "recursion.print_sub_sets.Solution",
+      "projectName": "DynamicProgramming_516c5416"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Solution",
+      "request": "launch",
+      "mainClass": "recursion.towers_of_hanoi.Solution",
+      "projectName": "DynamicProgramming_516c5416"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Solution",
+      "request": "launch",
+      "mainClass": "recursion.reverse_stack.Solution",
+      "projectName": "DynamicProgramming_516c5416"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Solution",
+      "request": "launch",
+      "mainClass": "recursion.delete_middle_element.Solution",
+      "projectName": "DynamicProgramming_516c5416"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Solution_ArrayList",
+      "request": "launch",
+      "mainClass": "recursion.sort_array_stack.Solution_ArrayList",
+      "projectName": "DynamicProgramming_516c5416"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Solution",
+      "request": "launch",
+      "mainClass": "recursion.sort_array_stack.Solution",
+      "projectName": "DynamicProgramming_516c5416"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Solution",
+      "request": "launch",
+      "mainClass": "recursion.printing_n_values.Solution",
+      "projectName": "DynamicProgramming_516c5416"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Solution",
+      "request": "launch",
+      "mainClass": "wordbreak.Solution",
+      "projectName": "DynamicProgramming_516c5416"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - SubArrays",
+      "request": "launch",
+      "mainClass": "SubArrays",
+      "projectName": "DynamicProgramming_516c5416"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - LCM",
+      "request": "launch",
+      "mainClass": "LCM",
+      "projectName": "DynamicProgramming_516c5416"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Fruits",
+      "request": "launch",
+      "mainClass": "Fruits",
+      "projectName": "DynamicProgramming_516c5416"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - LIS",
+      "request": "launch",
+      "mainClass": "LCS.LIS",
+      "projectName": "DynamicProgramming_516c5416"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - LongestNonDecreasing",
+      "request": "launch",
+      "mainClass": "LCS.LongestNonDecreasing",
+      "projectName": "DynamicProgramming_516c5416"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Solution",
+      "request": "launch",
+      "mainClass": "regular_exps.Solution",
+      "projectName": "DynamicProgramming_516c5416"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Partition",
+      "request": "launch",
+      "mainClass": "painters_partition.Partition",
+      "projectName": "DynamicProgramming_516c5416"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Solution",
+      "request": "launch",
+      "mainClass": "scrambled_strings.Solution",
+      "projectName": "DynamicProgramming_516c5416"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - BNS1",
+      "request": "launch",
+      "mainClass": "stocks.BNS1",
+      "projectName": "DynamicProgramming_516c5416"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Puzzle",
+      "request": "launch",
+      "mainClass": "Puzzle",
+      "projectName": "DynamicProgramming_516c5416"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - MinCoins",
+      "request": "launch",
+      "mainClass": "unbounded_ks.MinCoins",
+      "projectName": "DynamicProgramming_516c5416"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Dishes",
+      "request": "launch",
+      "mainClass": "tusharbday.Dishes",
+      "projectName": "DynamicProgramming_516c5416"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Paran",
+      "request": "launch",
+      "mainClass": "paranthesization.Paran",
+      "projectName": "DynamicProgramming_516c5416"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Solution",
+      "request": "launch",
+      "mainClass": "edit_distance.Solution",
+      "projectName": "DynamicProgramming_516c5416"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - MaxSubArray2D",
+      "request": "launch",
+      "mainClass": "kadane.MaxSubArray2D",
+      "projectName": "DynamicProgramming_516c5416"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - MaxSubArray",
+      "request": "launch",
+      "mainClass": "kadane.MaxSubArray",
+      "projectName": "DynamicProgramming_516c5416"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - WaysToDecode",
+      "request": "launch",
+      "mainClass": "general.WaysToDecode",
+      "projectName": "DynamicProgramming_516c5416"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - IsInterLeaving",
+      "request": "launch",
+      "mainClass": "LCS.IsInterLeaving",
+      "projectName": "DynamicProgramming_516c5416"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - DisntictSubSequences",
+      "request": "launch",
+      "mainClass": "LCS.DisntictSubSequences",
+      "projectName": "DynamicProgramming_516c5416"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - PatternMatching",
+      "request": "launch",
+      "mainClass": "LCS.PatternMatching",
+      "projectName": "DynamicProgramming_516c5416"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - LongestRepeatingSubSeq",
+      "request": "launch",
+      "mainClass": "LCS.LongestRepeatingSubSeq",
+      "projectName": "DynamicProgramming_516c5416"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - LongestPalindromeSubSeq",
+      "request": "launch",
+      "mainClass": "LCS.LongestPalindromeSubSeq",
+      "projectName": "DynamicProgramming_516c5416"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - ConvertAToB",
+      "request": "launch",
+      "mainClass": "LCS.ConvertAToB",
+      "projectName": "DynamicProgramming_516c5416"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - ShortestCommonSuperSeq",
+      "request": "launch",
+      "mainClass": "LCS.ShortestCommonSuperSeq",
+      "projectName": "DynamicProgramming_516c5416"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - LCS",
+      "request": "launch",
+      "mainClass": "LCS.LCS",
+      "projectName": "DynamicProgramming_516c5416"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Solution",
+      "request": "launch",
+      "mainClass": "computer_groups.Solution",
+      "projectName": "DynamicProgramming_516c5416"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Equation",
+      "request": "launch",
+      "mainClass": "equation.Equation",
+      "projectName": "DynamicProgramming_516c5416"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - SubsetSum",
+      "request": "launch",
+      "mainClass": "subsetsum.SubsetSum",
+      "projectName": "DynamicProgramming_516c5416"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Knapsack",
+      "request": "launch",
+      "mainClass": "knapsack.Knapsack",
+      "projectName": "DynamicProgramming_516c5416"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - knapsack",
+      "request": "launch",
+      "mainClass": "knapsack.knapsack",
+      "projectName": "DynamicProgramming_516c5416"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - Group",
+      "request": "launch",
+      "mainClass": "groupresources.Group",
+      "projectName": "DynamicProgramming_516c5416"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - PP",
+      "request": "launch",
+      "mainClass": "prime_partition.PP",
+      "projectName": "DynamicProgramming_516c5416"
+    },
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - MCM",
+      "request": "launch",
+      "mainClass": "matrixchain.MCM",
+      "projectName": "DynamicProgramming_516c5416"
+    },
+    {
+      "type": "java",
+      "name": "Debug (Launch) - Current File",
+      "request": "launch",
+      "mainClass": "${file}"
+    }
+  ]
 }

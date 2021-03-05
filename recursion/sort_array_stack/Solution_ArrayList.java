@@ -2,7 +2,6 @@ package recursion.sort_array_stack;
 
 import java.util.ArrayList;
 import java.util.Random;
-import java.util.Stack;
 
 public class Solution_ArrayList {
     public static void main(String[] args) {

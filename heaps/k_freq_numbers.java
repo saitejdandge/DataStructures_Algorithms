@@ -8,7 +8,7 @@ public class k_freq_numbers {
 
     public static void main(String[] args) {
         int k = 3;
-        int a[] = { 1, 1, 1, 1, 3,3,3,3,3,3,2,2, 2, 2, 2, 4, 4 };
+        int a[] = {1, 1, 1, 1, 3, 3, 3, 3, 3, 3, 2, 2, 2, 2, 2, 4, 4};
         HashMap<Integer, Integer> map = new HashMap<>();
 
         for (int i : a) {

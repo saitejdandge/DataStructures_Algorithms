@@ -6,7 +6,7 @@ import java.util.List;
 
 public class Solution {
     public static void main(String[] args) {
-        List<List<Integer>> x = threeSum(new int[] { -1, -1, 0, 1, 1, 2, 4 });
+        List<List<Integer>> x = threeSum(new int[]{-1, -1, 0, 1, 1, 2, 4});
         for (List<Integer> l : x) {
             for (Integer i : l)
                 System.out.print(i + " ");
@@ -38,7 +38,7 @@ public class Solution {
                     }
                     if (c > t) {
                         high--;
-                    } else if(c<t){
+                    } else if (c < t) {
                         low++;
                     }
 

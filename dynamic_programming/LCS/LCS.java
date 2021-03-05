@@ -1,4 +1,4 @@
-package dynamic_programming. LCS;
+package dynamic_programming.LCS;
 
 public class LCS {
 
@@ -43,7 +43,7 @@ public class LCS {
             return t[m][n];
 
         if (a.charAt(m - 1) == b.charAt(n - 1)) {
-            System.out.print(a.charAt(m - 1)+" ");
+            System.out.print(a.charAt(m - 1) + " ");
             t[m][n] = 1 + solveTopDown(a, b, m - 1, n - 1, t);
         } else {
             t[m][n] = Math.max(solveTopDown(a, b, m - 1, n, t), solveTopDown(a, b, m, n - 1, t));

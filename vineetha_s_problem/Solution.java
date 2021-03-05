@@ -3,7 +3,7 @@ package vineetha_s_problem;
 public class Solution {
 
     public static void main(String[] args) {
-        int a[] = { 2,1,3,4,6,5};
+        int a[] = {2, 1, 3, 4, 6, 5};
 
         System.out.println(solve(a, 0, a.length - 1));
 
@@ -33,8 +33,6 @@ public class Solution {
     }
 
 
-
-
     public static boolean solve(int a[], int i, int j) {
         if (i == j && i + 1 == a[i])
             return true;
@@ -53,13 +51,4 @@ public class Solution {
     }
 
 
-
-
-
-
-
-
-
-
-    
 }

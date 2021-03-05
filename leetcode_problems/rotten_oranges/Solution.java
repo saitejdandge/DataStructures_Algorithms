@@ -6,7 +6,7 @@ import java.util.Queue;
 public class Solution {
 
     public static void main(String[] args) {
-        int grid[][] = { { 2, 1, 1 }, { 1, 1, 0 }, { 0, 1, 1 } };
+        int grid[][] = {{2, 1, 1}, {1, 1, 0}, {0, 1, 1}};
         System.out.println(new Solution().orangesRotting(grid));
     }
 
@@ -55,7 +55,7 @@ public class Solution {
             System.out.println();
         }
 
-        return check(grid)?total:-1;
+        return check(grid) ? total : -1;
         // return total;
     }
 

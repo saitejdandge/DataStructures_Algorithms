@@ -1,11 +1,11 @@
-package dynamic_programming. subsetsum;
+package dynamic_programming.subsetsum;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
 public class SubsetSum {
-    static int[] data = {  1, 1, 1, 1, 4, 2, 6 };
+    static int[] data = {1, 1, 1, 1, 4, 2, 6};
 
     public static void main(String[] args) {
         // System.out.println(solve(data.length, 6));

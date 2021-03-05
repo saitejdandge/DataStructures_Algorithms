@@ -30,7 +30,7 @@ class LIS {
     }
 
     public static void main(String args[]) {
-        int arr[] = { 14, 24, 18, 46, 55, 53, 82, 18, 101, 20, 78, 35, 68, 9, 16, 93, 101, 85, 81, 28, 78 };
+        int arr[] = {14, 24, 18, 46, 55, 53, 82, 18, 101, 20, 78, 35, 68, 9, 16, 93, 101, 85, 81, 28, 78};
         int n = arr.length;
         System.out.println("Length of lis is " + lis(arr, n) + "\n");
     }

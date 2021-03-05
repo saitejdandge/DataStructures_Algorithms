@@ -1,7 +1,7 @@
 package dynamic_programming.general;
 
 public class WaysToDecode {
-    int []map;
+    int[] map;
 
     public static void main(String[] args) {
         System.out.println(new WaysToDecode().numDecodings("12323232"));

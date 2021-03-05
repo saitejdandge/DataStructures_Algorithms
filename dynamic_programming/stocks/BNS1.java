@@ -3,7 +3,7 @@ package dynamic_programming.stocks;
 // buy and sell the stock II
 public class BNS1 {
 
-    static int a[] = { 7, 1};
+    static int a[] = {7, 1};
 
     public static void main(String[] args) {
         System.out.println(solve(0, false));
