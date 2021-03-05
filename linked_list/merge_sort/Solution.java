@@ -30,5 +30,11 @@ public class Solution {
             System.out.println(xy);
 
 
+        LinkedList<String> myList = new LinkedList<>();
+        myList.addLast("hello");
+        myList.addLast("apple");
+        myList.sort();
+        for (String s : myList)
+            System.out.println(s);
     }
 }
