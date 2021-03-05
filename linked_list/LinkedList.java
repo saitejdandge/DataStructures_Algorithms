@@ -22,7 +22,7 @@ public class LinkedList<E> implements ListI<E> {
         this.currentSize = 0;
     }
 
-    public class Node<E> {
+    public static class Node<E> {
         Node<E> next;
         E data;
 
