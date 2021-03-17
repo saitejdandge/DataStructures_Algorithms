@@ -17,28 +17,26 @@ public class GreaterToRight {
         Stack<Integer> stack = new Stack<>();
 
         int n = a.length;
-        int[] output = new int[n];
-        int counter = n;
 
         for (int i = n - 1; i >= 0; i--) {
 
+            int temp = a[i];
             if (stack.isEmpty()) {
-                output[--counter] = -1;
+                a[i] = -1;
             } else if (stack.peek() > a[i]) {
-                output[--counter] = stack.peek();
+                a[i] = stack.peek();
             } else {
-
                 while (!stack.isEmpty() && stack.peek() <= a[i])
                     stack.pop();
                 if (stack.isEmpty())
-                    output[--counter] = -1;
+                    a[i] = -1;
                 else
-                    output[--counter] = stack.peek();
+                    a[i] = stack.peek();
             }
-            stack.push(a[i]);
+            stack.push(temp);
         }
 
-        return output;
+        return a;
 
     }
 }

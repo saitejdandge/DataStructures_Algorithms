@@ -1,33 +1,34 @@
 package dynamic_programming.painters_partition;
 
+import java.util.Arrays;
+
 public class Partition {
-    static int a[] = {10, 89, 400, 30};
+    static int[] a = {10, 20, 30, 40, 50};
 
     public static void main(String[] args) {
-        System.out.println(solve(0, a.length - 1, 2));
+        System.out.println(solve(a.length, 3));
     }
 
-    public static int solve(int i, int j, int p) {
+    public static int solve(int paintings, int painters) {
 
-        if (i > j)
-            return 0;
-        if (i == j)
-            return a[i];
-        if (p == 0) {
-            int s = 0;
-            for (int k = i; k <= j; k++)
-                s += a[k];
-            return s;
+        if (paintings == 1)
+            return a[0];
+        if (painters == 1) {
+            return Arrays.stream(a).limit(paintings).reduce(0, Integer::sum);
         }
-        int ans = Integer.MAX_VALUE;
-        for (int k = i; k <= j - 1; k++) {
-            int left = solve(i, k, p - 1);
-            int right = solve(k + 1, j, p - 1);
-            if (i == 0 && j == a.length - 1)
-                System.out.println(left + "|" + right);
-            int temp = Math.max(left, right);
-            ans = Math.min(ans, temp);
+        int best = Integer.MAX_VALUE;
+        for (int i = paintings - 1; i >= 1; i--) {
+
+//            int subArraySum = 0;
+//            for (int k = i; k < paintings; k++)
+//                subArraySum += a[k];
+
+            int subArraySum = Arrays.stream(a).skip(i + 1).limit(paintings).reduce(0, Integer::sum);
+
+            int subProblemSum = solve(i, painters - 1);
+
+            best = Math.min(best, Math.max(subProblemSum, subArraySum));
         }
-        return ans;
+        return best;
     }
 }

@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.List;
 
 public class SubsetSum {
-    static int[] data = {1, 1, 1, 1, 4, 2, 6};
+    static int[] data = {1, 3, 5, 8, 10};
 
     public static void main(String[] args) {
         // System.out.println(solve(data.length, 6));
@@ -13,7 +13,13 @@ public class SubsetSum {
         Arrays.stream(t).forEach(a -> Arrays.fill(a, -1));
         ArrayList<Integer> v = new ArrayList<>();
         // System.out.println("Top Down" + topDown(data.length, 6, t, v));
-        System.out.println(largestSubSetSum(data.length, 6));
+//        System.out.println(largestSubSetSum(data.length, 6));
+
+        List<List<Integer>> result = new ArrayList<>();
+
+        System.out.println(solve(data.length, 8, new ArrayList<>(), result));
+
+        System.out.println(result);
     }
 
     public static int largestSubSetSum(int n, int sum) {
@@ -26,18 +32,19 @@ public class SubsetSum {
         }
     }
 
-    public static int solve(int n, int sum) {
+    public static int solve(int n, int sum, List<Integer> buffer, List<List<Integer>> result) {
 
-        if (n == 0 && sum == 0)
+        if (sum == 0) {
+            result.add(new ArrayList<>(buffer));
             return 1;
-        if (n == 0)
+        }
+        if (sum < 0 || n == 0)
             return 0;
-        if (sum == 0)
-            return 1;
-        if (data[n - 1] <= sum) {
-            return (solve(n - 1, sum - data[n - 1]) + solve(n - 1, sum));
-        } else
-            return solve(n - 1, sum);
+        buffer.add(Integer.valueOf(data[n - 1]));
+        int x = solve(n - 1, sum - data[n - 1], buffer, result);
+        buffer.remove(Integer.valueOf( data[n - 1]));
+        int y = solve(n - 1, sum, buffer, result);
+        return x + y;
     }
 
     /*
