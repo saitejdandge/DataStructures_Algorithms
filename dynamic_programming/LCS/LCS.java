@@ -3,8 +3,8 @@ package dynamic_programming.LCS;
 public class LCS {
 
     public static void main(String[] args) {
-        String a = "GEEK";
-        String b = "EKE";
+        String a = "AGGTAB";
+        String b = "GXTXAYB";
         // System.out.println(solve(a, b, a.length(), b.length()));
 //        System.out.println(solveTopDown(a, b));
         System.out.println(solveBottomUp(a, b));
@@ -120,10 +120,10 @@ public class LCS {
             }
         }
         if (i != 0) {
-            builder.append(new StringBuilder(a.substring(0, i + 1)).reverse().toString());
+            builder.append(new StringBuilder(a.substring(0, i)).reverse().toString());
         }
         if (j != 0)
-            builder.append(new StringBuilder(b.substring(0, j + 1)).reverse().toString());
+            builder.append(new StringBuilder(b.substring(0, j)).reverse().toString());
 
         System.out.println(builder.reverse().toString());
 
