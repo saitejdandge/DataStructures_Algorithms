@@ -1,10 +1,12 @@
 package dynamic_programming.general;
 
+import java.util.Arrays;
+
 public class WaysToDecode {
     int[] map;
 
     public static void main(String[] args) {
-        System.out.println(new WaysToDecode().numDecodings("12323232"));
+        System.out.println(new WaysToDecode().numDecodings("12132123216262162612525124152616262626173739273273211122113"));
     }
 
     public int numDecodings(String a) {
@@ -12,8 +14,7 @@ public class WaysToDecode {
             return 0;
         else {
             map = new int[a.length()];
-            for (int i = 0; i < map.length; i++)
-                map[i] = -1;
+            Arrays.fill(map, -1);
             return solve(a.toCharArray(), 0);
         }
     }
