@@ -12,7 +12,6 @@ public class LongestNonDecreasing {
         int dp[] = new int[a.length];
         for (int i = 0; i < dp.length; i++)
             dp[i] = 1;
-
         int n = a.length;
         for (int j = 1; j <= n; j++) {
             for (int i = 1; i < j; i++) {

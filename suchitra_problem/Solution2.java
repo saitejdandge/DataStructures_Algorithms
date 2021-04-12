@@ -7,8 +7,9 @@ public class Solution2 {
 
     public static void main(String[] args) {
         max = Integer.MIN_VALUE;
-        solve("1111111111111111111111111111111111111111111111111111111111111111111111111111011".toCharArray(), 5, new HashMap<>());
+        solve("1234".toCharArray(), 5, new HashMap<>());
         System.out.println(max);
+        System.out.println(count);
     }
 
     public static void solve(char[] a, int k, HashMap<String, Integer> map) {
@@ -26,8 +27,10 @@ public class Solution2 {
             }
         }
     }
+    static  int count=0;
 
     public static int getMax(char[] a, HashMap<String, Integer> map) {
+        count++;
         if (a.length == 1 || a.length == 0)
             return a.length;
         String key = String.valueOf(a);
