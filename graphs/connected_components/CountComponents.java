@@ -1,8 +1,8 @@
-package graphs;
+package graphs.connected_components;
 
 import java.util.*;
 
-public class ConnectedComponents {
+public class CountComponents {
 
     public static void main(String[] args) {
         int[][] a = {{1, 1, 0, 0}, {1, 1, 0, 1}, {0, 0, 0, 1}, {1, 1, 1, 0}, {1, 1, 0, 1}};
