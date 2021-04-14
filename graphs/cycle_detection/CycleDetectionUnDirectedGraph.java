@@ -1,4 +1,4 @@
-package graphs;
+package graphs.cycle_detection;
 
 import java.util.Arrays;
 import java.util.List;
@@ -9,10 +9,10 @@ public class CycleDetectionUnDirectedGraph {
     public static void main(String[] args) {
 
         TreeMap<Integer, List<Integer>> graph = new TreeMap<>();
-        graph.put(0, Arrays.asList(new Integer[]{1, 2}));
-        graph.put(1, Arrays.asList(new Integer[]{0}));
-        graph.put(2, Arrays.asList(new Integer[]{0, 3}));
-        graph.put(3, Arrays.asList(new Integer[]{2}));
+        graph.put(0, Arrays.asList(1, 2));
+        graph.put(1, Arrays.asList(0));
+        graph.put(2, Arrays.asList(0, 3));
+        graph.put(3, Arrays.asList(2));
 
         System.out.println(isCycle(graph));
 
@@ -32,7 +32,6 @@ public class CycleDetectionUnDirectedGraph {
             return true;
 
         visited[curr] = 1;
-
         if (graph.get(curr) != null)
             for (Integer n : graph.get(curr)) {
                 if (visited[n] == 1) {

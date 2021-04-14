@@ -1,4 +1,4 @@
-package graphs;
+package graphs.flood_fill;
 
 import java.util.ArrayList;
 import java.util.LinkedList;

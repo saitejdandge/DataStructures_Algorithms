@@ -1,4 +1,4 @@
-package graphs;
+package graphs.flood_fill;
 
 class FloodFill {
     public int[][] floodFill(int[][] b, int i, int j, int newColor) {

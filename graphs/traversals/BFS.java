@@ -32,8 +32,7 @@ public class BFS {
         HashSet<String> marked = new HashSet<>();
         while (!queue.isEmpty()) {
             String result = queue.poll();
-            if (!marked.contains(result))
-                System.out.println(result);
+            System.out.println(result);
             marked.add(result);
             for (String neighbor : graph.get(result)) {
                 if (!marked.contains(neighbor))

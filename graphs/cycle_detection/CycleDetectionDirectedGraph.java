@@ -1,4 +1,4 @@
-package graphs;
+package graphs.cycle_detection;
 
 import java.util.*;
 
@@ -6,11 +6,10 @@ public class CycleDetectionDirectedGraph {
     public static void main(String[] args) {
 
         TreeMap<Integer, List<Integer>> graph = new TreeMap<>();
-        graph.put(0, Arrays.asList(new Integer[]{1}));
+        graph.put(0, Collections.singletonList(1));
         graph.put(1, null);
-        graph.put(2, Arrays.asList(new Integer[]{1, 4}));
-        graph.put(4, Arrays.asList(new Integer[]{0, 2}));
-
+        graph.put(2, Arrays.asList(1, 4));
+        graph.put(4, Arrays.asList(0, 2));
         System.out.println(isCycle(graph));
 
     }
