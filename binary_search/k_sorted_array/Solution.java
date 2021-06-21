@@ -3,7 +3,7 @@ package binary_search.k_sorted_array;
 public class Solution {
 
     public static void main(String[] args) {
-        int[] a = new int[]{2,3,2,3,5,2,4,34,};
+        int[] a = new int[]{2, 3, 2, 3, 5, 2, 4, 34,};
         System.out.println(solve(a, a.length, 5));
     }
 

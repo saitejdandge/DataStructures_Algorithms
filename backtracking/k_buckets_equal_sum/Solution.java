@@ -4,16 +4,15 @@ public class Solution {
 
     public static void main(String[] args) {
 
-        int a[] = {4, 3, 2, 3, 5, 1, 1000};
-        System.out.println(driver(a, 5));
+        int[] a = {4, 3, 2, 3, 5, 2, 1};
+        System.out.println(driver(a, 4));
 
     }
 
-    public static boolean driver(int a[], int k) {
+    public static boolean driver(int[] a, int k) {
 
         if (k == 0)
             return false;
-
         int sum = 0;
         for (int i : a)
             sum += i;
@@ -22,11 +21,11 @@ public class Solution {
             return false;
 
         int n = a.length;
-        boolean output[] = new boolean[n];
+        boolean[] output = new boolean[n];
         return solve(k, 0, output, 0, 0, a);
     }
 
-    public static boolean solve(int k, int l, boolean output[], int progress, int total, int a[]) {
+    public static boolean solve(int k, int l, boolean[] output, int progress, int total, int a[]) {
         if (k == 1) {
             return true;
         }

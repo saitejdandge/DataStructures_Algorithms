@@ -20,7 +20,7 @@ public class Solution {
 
     private static int partition(int[] a, int left, int right) {
 
-        int pivotIndex = right ;
+        int pivotIndex = right;
         int pivot = a[pivotIndex];
         int i = left - 1;
         for (int j = left; j < right; j++) {

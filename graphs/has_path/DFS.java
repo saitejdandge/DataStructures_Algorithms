@@ -44,9 +44,7 @@ public class DFS {
     }
 
     //prints multiple paths, by backtracking
-    public static void multipleTrack(String source, String destination, HashMap<String, List<String>> map, List<String> visited)
-
-     {
+    public static void multipleTrack(String source, String destination, HashMap<String, List<String>> map, List<String> visited) {
         if (source.equals(destination)) {
             visited.add(destination);
             System.out.println(visited);

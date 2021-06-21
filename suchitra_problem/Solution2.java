@@ -4,6 +4,7 @@ import java.util.HashMap;
 
 public class Solution2 {
     static int max = Integer.MIN_VALUE;
+    static int count = 0;
 
     public static void main(String[] args) {
         max = Integer.MIN_VALUE;
@@ -27,7 +28,6 @@ public class Solution2 {
             }
         }
     }
-    static  int count=0;
 
     public static int getMax(char[] a, HashMap<String, Integer> map) {
         count++;

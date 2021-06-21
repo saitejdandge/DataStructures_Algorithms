@@ -29,7 +29,7 @@ public class Solution {
     private static void markMine(int[][] maze) {
         for (int i = 0; i < maze.length; i++) {
             for (int j = 0; j < maze[i].length; j++) {
-                if (maze[i][j] == 0 ) {
+                if (maze[i][j] == 0) {
                     mark(i, j, maze, 2);
                 }
             }
@@ -39,7 +39,7 @@ public class Solution {
     private static void mark(int i, int j, int[][] maze, int spread) {
         int m = maze.length;
         int n = maze[0].length;
-        if (i < 0 || j < 0 || i >= m || j >= n  || spread <= 0)
+        if (i < 0 || j < 0 || i >= m || j >= n || spread <= 0)
             return;
         maze[i][j] = 2;
         mark(i + 1, j, maze, spread - 1);

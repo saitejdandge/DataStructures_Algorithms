@@ -5,31 +5,59 @@ import java.util.Arrays;
 import java.util.List;
 
 public class SubsetSum {
-    static int[] data = {1, 3, 5, 8, 10};
+    static int[] data = {0, 1, 1, 0, 0};
 
     public static void main(String[] args) {
-        // System.out.println(solve(data.length, 6));
-        int[][] t = new int[data.length + 1][6 + 1];
+        int sum = 1;
+        int[][] t = new int[data.length + 1][sum + 1];
         Arrays.stream(t).forEach(a -> Arrays.fill(a, -1));
-        ArrayList<Integer> v = new ArrayList<>();
-        // System.out.println("Top Down" + topDown(data.length, 6, t, v));
-//        System.out.println(largestSubSetSum(data.length, 6));
-
-        List<List<Integer>> result = new ArrayList<>();
-
-        System.out.println(solve(data.length, 8, new ArrayList<>(), result));
-
-        System.out.println(result);
+        int zeros = 0;
+        for (int i : data) {
+            if (i == 0)
+                zeros++;
+        }
+        int zerosValue = ((int) (Math.pow(2, zeros)));
+        System.out.println(topDown(data.length, sum, t) * zerosValue);
+        System.out.println(bottomUp(data, sum) * zerosValue);
+        System.out.println(bottomUpSpaceOptimized(data, sum) * zerosValue);
     }
 
-    public static int largestSubSetSum(int n, int sum) {
-        if (sum == 0 || n == 0)
-            return 0;
-        if (data[n - 1] <= sum) {
-            return Math.max(largestSubSetSum(n - 1, sum - data[n - 1]) + 1, largestSubSetSum(n - 1, sum));
-        } else {
-            return largestSubSetSum(n - 1, sum);
+    public static int bottomUp(int[] a, int sum) {
+        int[][] t = new int[a.length + 1][sum + 1];
+        t[0][0] = 1;
+        for (int i = 1; i <= a.length; i++) {
+            for (int j = 0; j <= sum; j++) {
+                if (j == 0) {
+                    t[i][j] = 1;
+                } else if (a[i - 1] <= j && a[i - 1] != 0) {
+                    t[i][j] = t[i - 1][j] + t[i - 1][j - a[i - 1]];
+                } else {
+                    t[i][j] = t[i - 1][j];
+                }
+            }
         }
+        return t[a.length][sum];
+    }
+
+    public static int bottomUpSpaceOptimized(int[] a, int sum) {
+        int[][] t = new int[2][sum + 1];
+        int bi = 0;
+        t[0][0] = 1;
+        for (int i = 1; i <= a.length; i++) {
+            bi = i % 2;
+            for (int j = 0; j <= sum; j++) {
+                if (j == 0) {
+                    t[bi][j] = 1;
+                } else {
+                    if (a[i - 1] <= j && a[i - 1] != 0) {
+                        t[bi][j] = t[1 - bi][j] + t[1 - bi][j - a[i - 1]];
+                    } else {
+                        t[bi][j] = t[1 - bi][j];
+                    }
+                }
+            }
+        }
+        return t[bi][sum];
     }
 
     public static int solve(int n, int sum, List<Integer> buffer, List<List<Integer>> result) {
@@ -42,45 +70,30 @@ public class SubsetSum {
             return 0;
         buffer.add(Integer.valueOf(data[n - 1]));
         int x = solve(n - 1, sum - data[n - 1], buffer, result);
-        buffer.remove(Integer.valueOf( data[n - 1]));
+        buffer.remove(Integer.valueOf(data[n - 1]));
         int y = solve(n - 1, sum, buffer, result);
         return x + y;
     }
 
-    /*
-     * isSubsetSum(set, n, sum) = false, if sum > 0 and n == 0 isSubsetSum(set, n,
-     * sum) = true, if sum == 0
-     */
+    public static int topDown(int n, int sum, int[][] t) {
 
-    public static int topDown(int n, int sum, int[][] t, List<Integer> list) {
-
-        if (sum < 0)
-            return -1;
-        if (sum == 0) {
-            System.out.println("------------");
-            for (int x : list)
-                System.out.print(x + " ");
-            System.out.println();
-            System.out.println("------------");
-
+        if (sum == 0)
             return 1;
-        }
+
         if (n == 0)
             return 0;
 
-        if (t[n][sum] != -1)
+        if (t[n][sum] != -1) {
             return t[n][sum];
-
-        if (data[n - 1] <= sum) {
-            list.add(data[n - 1]);
-            int inclusive = topDown(n - 1, sum - data[n - 1], t, list);
-            list.remove(new Integer(data[n - 1]));
-            int exclusive = topDown(n - 1, sum, t, list);
-            t[n][sum] = inclusive + exclusive;
-        } else {
-            t[n][sum] = topDown(n - 1, sum, t, list);
         }
 
+        if (data[n - 1] <= sum && data[n - 1] != 0) {
+            int inclusive = topDown(n - 1, sum - data[n - 1], t);
+            int exclusive = topDown(n - 1, sum, t);
+            t[n][sum] = inclusive + exclusive;
+        } else {
+            t[n][sum] = topDown(n - 1, sum, t);
+        }
         return t[n][sum];
     }
 

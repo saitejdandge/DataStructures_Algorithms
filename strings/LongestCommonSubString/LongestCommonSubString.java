@@ -3,8 +3,8 @@ package strings.LongestCommonSubString;
 public class LongestCommonSubString {
     public static void main(String[] args) {
 
-        String a = "apple";
-        String b = "bapap";
+        String a = "abcaaaaaaaa";
+        String b = "abcaa";
         System.out.println(solve(a.length(), b.length(), a, b, 0));
     }
 
