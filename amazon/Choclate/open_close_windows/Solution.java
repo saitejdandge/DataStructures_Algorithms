@@ -1,15 +1,60 @@
 package amazon.Choclate.open_close_windows;
 
+import kotlin.Pair;
+
 public class Solution {
 
     public static void main(String[] args) {
 
-        String input = "xx|xx|x|";
+        String input = "xx|xx|xx";
         Obj[][] dp = solve(input.toCharArray());
-        for (int l = 0; l < input.length(); l++)
-            for (int r = l; r < input.length(); r++) {
-                System.out.println(input.substring(l, r + 1) + " " + dp[l][r].ans);
+//        for (int l = 0; l < input.length(); l++)
+//            for (int r = l; r < input.length(); r++) {
+//                System.out.println(input.substring(l, r + 1) + " " + dp[l][r].ans);
+//            }
+
+        Pair<Integer, Integer>[][] ans = new Pair[input.length()][input.length()];
+
+        Pair<Integer, Integer> res = solve(0, input.length() - 1, input.toCharArray(), ans);
+        System.out.println(res.getFirst() + ":" + res.getSecond());
+    }
+
+    public static Pair<Integer, Integer> solve(int s, int e, char[] input, Pair<Integer, Integer>[][] dp) {
+        if (s >= 0 && e <= input.length && dp[s][e] != null) {
+            System.out.println("Cache hit");
+            return dp[s][e];
+        }
+        if (e - s + 1 <= 2) {
+            int xValues = 0;
+            while (s <= e) {
+                if (input[s] == 'x')
+                    xValues++;
+                s++;
             }
+            return new Pair<>(xValues, 0);
+        }
+
+        Pair<Integer, Integer> result;
+        if (input[s] == '|' && input[e] == '|') {
+            Pair<Integer, Integer> prev = solve(s + 1, e - 1, input, dp);
+            result = new Pair<>(prev.getFirst(), prev.getFirst());
+        } else {
+
+            Pair<Integer, Integer> result1 = solve(s + 1, e - 1, input, dp);
+            Pair<Integer, Integer> result2 = solve(s + 1, e, input, dp);
+            Pair<Integer, Integer> result3 = solve(s, e - 1, input, dp);
+            Pair<Integer, Integer> finalResult;
+            if (result1.getSecond() > result2.getSecond())
+                finalResult = result1;
+            else if (result3.getSecond() > result2.getSecond())
+                finalResult = result3;
+            else
+                finalResult = result2;
+
+            result = new Pair<>((input[s] == 'x' ? 1 : 0) + (result2.getFirst()), finalResult.getSecond());
+        }
+        dp[s][e] = result;
+        return result;
     }
 
     public static Obj[][] solve(char[] input) {
