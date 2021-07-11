@@ -9,7 +9,7 @@ public class Solution {
 
         System.out.println(solve(new int[][]{{10000}, {2, 3, 4}, {3, 2}, {1, 6}}, 0, 10, "", new HashMap<>()));
 
-        System.out.println(solve2(new int[]{2,3}, new int[]{4}, new int[]{3, 2}, new int[]{1, 2}, 10));
+        System.out.println(solve2(new int[]{2, 3}, new int[]{4}, new int[]{3, 2}, new int[]{1, 2}, 10));
     }
 
 

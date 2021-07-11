@@ -2,7 +2,7 @@ package binary_trees.traversals.inorder_iterative;
 
 import binary_trees.BinaryTree;
 
-import java.util.Stack;
+import java.util.LinkedList;
 
 public class Solution {
     public static void main(String[] args) {
@@ -20,14 +20,26 @@ public class Solution {
         temp.right = new BinaryTree.Node<>(80);
         tree.root.left.left.left = temp;
 
-        tree.iterativeInOrder();
-
-        Stack<BinaryTree.Node<Integer>> stack = new Stack<>();
-        stack.add(tree.root);
-        while (!stack.isEmpty()) {
-            System.out.println(tree.nexIterativeInOrder(stack));
-            stack.pop();
-        }
+        tree.allOrdersIterative();
+        tree.morrisTraversal();
+        tree.boundaryTraversal();
+        System.out.println();
+        tree.diagonalTraversal();
+        System.out.println();
+        tree.spiralTraversal();
+        System.out.println();
+        tree.burnNode(tree.root, 40, new LinkedList<>());
+        System.out.println();
+        System.out.println(tree);
+        System.out.println(tree.deSerialize(tree.toString()));
+//        tree.iterativeInOrder();
+//
+//        Stack<BinaryTree.Node<Integer>> stack = new Stack<>();
+//        stack.add(tree.root);
+//        while (!stack.isEmpty()) {
+//            System.out.println(tree.nexIterativeInOrder(stack));
+//            stack.pop();
+//        }
 
     }
 

@@ -1,7 +1,5 @@
 package arrays.min_swaps_required_to_sort_array;
 
-import java.util.HashMap;
-
 public class Solution {
 
     public static void main(String[] args) {

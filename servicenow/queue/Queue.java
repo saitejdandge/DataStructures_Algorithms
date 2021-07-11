@@ -14,6 +14,7 @@ public class Queue {
     private final int[] data;
     private int front;
     private int rear;
+
     public Queue() {
         front = rear = 0;
         data = new int[5];

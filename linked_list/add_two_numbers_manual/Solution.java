@@ -125,7 +125,7 @@ public class Solution {
 
         }
         while (carry != 0) {
-            addToList(resHead, resTail, ((int) carry) % 10);
+            addToList(resHead, resTail, carry % 10);
             carry /= 10;
         }
         return resHead[0];
